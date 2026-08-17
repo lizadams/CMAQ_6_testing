@@ -1,0 +1,100 @@
+ caer:   1.5702239E-05  ctotf:   1.5702237E-05
+ caer reset to ctotf
+ caer exceeds ctotf at i =           10
+ caer:   4.3061882E-04  ctotf:   4.3061879E-04
+ caer reset to ctotf
+ caer exceeds ctotf at i =            1
+ caer:   1.8467894E-04  ctotf:   1.8467892E-04
+ caer reset to ctotf
+ caer exceeds ctotf at i =            1
+ caer:   3.4217004E-04  ctotf:   3.4217001E-04
+ caer reset to ctotf
+ caer exceeds ctotf at i =           18
+ caer:   5.7631652E-03  ctotf:   5.7631647E-03
+ caer reset to ctotf
+ caer exceeds ctotf at i =           18
+ caer:   5.8154413E-03  ctotf:   5.8154408E-03
+ caer reset to ctotf
+ caer exceeds ctotf at i =           10
+ caer:   7.8076962E-04  ctotf:   7.8076957E-04
+ caer reset to ctotf
+ caer exceeds ctotf at i =           31
+ caer:   1.0034150E-05  ctotf:   1.0034149E-05
+ caer reset to ctotf
+ caer exceeds ctotf at i =            1
+ caer:   2.2808055E-04  ctotf:   2.2808053E-04
+ caer reset to ctotf
+ caer exceeds ctotf at i =            2
+ caer:   2.5939500E-05  ctotf:   2.5939498E-05
+ caer reset to ctotf
+ caer exceeds ctotf at i =           31
+ caer:   1.2482597E-05  ctotf:   1.2482596E-05
+ caer reset to ctotf
+ caer exceeds ctotf at i =           31
+ caer:   8.6383161E-06  ctotf:   8.6383152E-06
+ caer reset to ctotf
+ caer exceeds ctotf at i =            2
+ caer:   2.0150039E-05  ctotf:   2.0150037E-05
+ caer reset to ctotf
+ caer exceeds ctotf at i =            2
+ caer:   1.5213674E-05  ctotf:   1.5213673E-05
+ caer reset to ctotf
+ caer exceeds ctotf at i =            1
+ caer:   5.5105629E-05  ctotf:   5.5105626E-05
+ caer reset to ctotf
+ caer exceeds ctotf at i =           31
+ caer:   3.1669231E-06  ctotf:   3.1669229E-06
+ caer reset to ctotf
+ caer exceeds ctotf at i =            1
+ caer:   6.4622698E-05  ctotf:   6.4622691E-05
+ caer reset to ctotf
+ caer exceeds ctotf at i =            1
+ caer:   6.3869637E-05  ctotf:   6.3869629E-05
+ caer reset to ctotf
+ caer exceeds ctotf at i =            1
+ caer:   8.4908890E-05  ctotf:   8.4908883E-05
+ caer reset to ctotf
+ caer exceeds ctotf at i =            2
+ caer:   2.0854151E-05  ctotf:   2.0854150E-05
+ caer reset to ctotf
+ caer exceeds ctotf at i =           10
+ caer:   4.8582599E-04  ctotf:   4.8582596E-04
+ caer reset to ctotf
+ caer exceeds ctotf at i =            1
+ caer:   8.2383951E-05  ctotf:   8.2383944E-05
+ caer reset to ctotf
+ caer exceeds ctotf at i =           31
+ caer:   2.1932040E-06  ctotf:   2.1932037E-06
+ caer reset to ctotf
+ caer exceeds ctotf at i =            1
+ caer:   8.4029380E-05  ctotf:   8.4029372E-05
+ caer reset to ctotf
+ caer exceeds ctotf at i =            2
+ caer:   1.6062120E-05  ctotf:   1.6062118E-05
+ caer reset to ctotf
+     After         AERO :  Gas  5.952E-01  | Aer  1.422E+09  | Non  6.978E-04
+
+     After NEXTIME: returned JDATE, JTIME 2022184 000000
+            Master Time Step
+            Processing completed...      79.9361 seconds
+ 
+
+     Timestep written to CTM_CONC_1       for date and time  2022184:000000
+
+     Timestep written to A_CONC_1         for date and time  2022183:230000
+
+     Timestep written to CTM_AELMO_1      for date and time  2022183:230000
+
+     Timestep written to CTM_AELMO_1      for date and time  2022183:230000
+      =--> Data Output completed...       0.1001 seconds
+ 
+
+     Timestep written to S_CGRID          for date and time  2022184:000000
+ 
+ 
+ 
+     ==============================================
+     |>---   PROGRAM COMPLETED SUCCESSFULLY   ---<|
+     ==============================================
+     Date and time 0:00:00   July 3, 2022   (2022184:000000)
+     The elapsed time for this simulation was   22693.4 seconds.
