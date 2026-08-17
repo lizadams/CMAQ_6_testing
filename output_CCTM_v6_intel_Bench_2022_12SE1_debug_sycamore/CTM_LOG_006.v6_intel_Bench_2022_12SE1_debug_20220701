@@ -1,0 +1,358 @@
+#================================================================================#        
+#|                                                                              |#        
+#|               The Community Multiscale Air Quality (CMAQ) Model              |#        
+#|                                  Version 6.0_alpha1                          |#        
+#|                                                                              |#        
+#|                          Built and Maintained by the                         |#        
+#|                        Office of Research and Development                    |#        
+#|                   United States Environmental Protection Agency              |#        
+#|                                                                              |#        
+#|                            https://www.epa.gov/cmaq                          |#        
+#|                                                                              |#        
+#|       Source Code:   https://www.github.com/USEPA/cmaq/tree/master           |#        
+#|       Documentation: https://www.github.com/USEPA/cmaq/tree/master/DOCS      |#        
+#|                                                                              |#        
+#|         The CMAQ Model is tested and released with cooperation from          |#        
+#|         the Community Modeling and Analysis System (CMAS) Center via         |#        
+#|         contract support. CMAS is managed by the Institute for the           |#        
+#|         Environment, University of North Carolina at Chapel Hill.            |#        
+#|         CMAS URL: (https://www.cmascenter.org)                               |#        
+#|                                                                              |#        
+#================================================================================#        
+                                                                                          
+     -----------------------                                                              
+     |>>   Please Note   <<|                                                              
+     -----------------------                                                              
+                                                                                          
+     Search for the headings below to jump to error checks, reports, and                  
+     diagnostic tables documenting emission input, prediction output, etc.                
+                                                                                          
+     ** It is CRITICALLY IMPORTANT that users check these sections when                   
+        configuring a new scenario or beginning production-level simulations. **          
+                                                                                          
+     -> INITIALIZE DESID EMISSION MODULE                                                  
+         - Error Check Emission Mapping Configuration                                     
+         - DESID Emission Scaling Report                                                  
+         - DESID Emission Diagnostic Report                                               
+     -> INITIALIZE ELMO MODULE                                                            
+         - Reading ELMO Composites from Mechanism-Specific Namelist                       
+         - ELMO Output Variable Report                                                    
+    ------------------------------------------------------------------------------        
+ 
+ 
+     ==================================
+     |>---   INITIALIZE I/O-API   ---<|
+     ==================================
+                                                                                          
+     This program uses the EPA-AREAL/MCNC-EnvPgms/BAMS/ UNC IE                            
+     Models-3 I/O Applications Programming Interface, [I/O API]                           
+     which is built on top of the netCDF I/O library (Copyright                           
+     993, 1996 University Corporation for Atmospheric Research                            
+     Unidata Program) and the PVM parallel-programming library                            
+     (from Oak Ridge National Laboratory).                                                
+     Copyright (C) 1992-2002 MCNC,                                                        
+     (C) 1992-2018 Carlie J. Coats, Jr.,                                                  
+     (C) 2003-2012 Baron Advanced Meteorological Systems, LLC, and                        
+     (C) 2014-2023 UNC Institute for the Environment.                                     
+     Released under the GNU LGPL  License, version 2.1.  See URL                          
+                                                                                          
+         https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html                          
+                                                                                          
+     for conditions of use.                                                               
+                                                                                          
+     ioapi-3.2: $Id: init3.F90 247 2023-03-22 15:59:19Z coats $                           
+     $Tag: 2023075 $                                                                      
+     Version 3.2.74 with PARMS3.EXT/PARAMETER::MXVARS3= 2048                              
+     netCDF version 4.8.1 of Aug 13 2026 10:00:20 $                                       
+                                                                                          
+                                                                                          
+     EXECUTION_ID: CMAQ_CCTMv6_lizadams_20260813_143644_863821320                         
+ 
+ 
+     ===========================================
+     |>---   DETERMINE WRF INPUT VERSION   ---<|
+     ===========================================
+     Value for IOAPI_CHECK_HEADERS:  N returning FALSE
+      
+     "MET_CRO_3D" opened as OLD:READ-ONLY   
+     File name "/work/users/l/i/lizadams/CMAQv6.0_2022_12SE1_Benchmark_2day//2022_12SE1/met/mcipv5.3.3/METCRO3D_220701.nc"
+     File type GRDDED3 
+     Execution ID "????????????????"
+     Grid name "SE60BENCH"
+     Dimensions: 80 rows, 100 cols, 35 lays, 21 vbles
+     NetCDF ID:     65536  opened as READONLY            
+     Starting date and time  2022182:000000 (0:00:00   July 1, 2022)
+     Timestep                          010000 (1:00:00 hh:mm:ss)
+     Maximum current record number        25
+
+     MET data determined based on WRF ARW version 4.4.2
+
+     Closing file MET_CRO_3D
+ 
+ 
+     ===============================
+     |>---   INITIALIZE GRID   ---<|
+     ===============================
+
+     |> Retrieve Horizontal Grid:
+     +=============================
+
+     File "GRIDDESC" opened for input on unit:  98
+     /work/users/l/i/lizadams/CMAQv6.0_2022_12SE1_Benchmark_2day//2022_12SE1/GRIDDESC
+
+
+     |> Retrieve Vertical Grid:
+     +===========================
+      
+     "INIT_CONC_1" opened as OLD:READ-ONLY   
+     File name "/work/users/l/i/lizadams/CMAQv6.0_2022_12SE1_Benchmark_2day//2022_12SE1/icbc/cracmm3/ICON_v60_intel23.2_2022hd_12SE1_20220630.nc"
+     File type GRDDED3 
+     Execution ID "????????????????"
+     Grid name "SE60BENCH"
+     Dimensions: 80 rows, 100 cols, 35 lays, 292 vbles
+     NetCDF ID:     65536  opened as READONLY            
+     Starting date and time  2022182:000000 (0:00:00   July 1, 2022)
+     Timestep                          010000 (1:00:00 hh:mm:ss)
+     Maximum current record number         1
+ 
+ 
+     ===========================================
+     |>---   INITIALIZE CHEMICAL SPECIES   ---<|
+     ===========================================
+
+     |> Add Modal Dimension to CMAQ Aerosol Species:
+     +================================================
+     
+     Added an Aitken Mode for Aerosol Species ASO4I
+     Added an Accumulation Mode for Aerosol Species ASO4J
+     Added a Coarse Mode for Aerosol Species ASO4K
+     Added an Aitken Mode for Aerosol Species ANH4I
+     Added an Accumulation Mode for Aerosol Species ANH4J
+     Added a Coarse Mode for Aerosol Species ANH4K
+     Added an Aitken Mode for Aerosol Species ANO3I
+     Added an Accumulation Mode for Aerosol Species ANO3J
+     Added a Coarse Mode for Aerosol Species ANO3K
+     Added an Accumulation Mode for Aerosol Species ASOATJ
+     Added an Accumulation Mode for Aerosol Species AGLYOLIGJ
+     Added an Accumulation Mode for Aerosol Species AHOMJ
+     Added an Accumulation Mode for Aerosol Species AELHOMJ
+     Added an Accumulation Mode for Aerosol Species AORGCJ
+     Added an Aitken Mode for Aerosol Species AECI
+     Added an Accumulation Mode for Aerosol Species AECJ
+     Added an Aitken Mode for Aerosol Species AOTHRI
+     Added an Accumulation Mode for Aerosol Species AOTHRJ
+     Added an Accumulation Mode for Aerosol Species AFEJ
+     Added an Accumulation Mode for Aerosol Species AALJ
+     Added an Accumulation Mode for Aerosol Species ASIJ
+     Added an Accumulation Mode for Aerosol Species ATIJ
+     Added an Accumulation Mode for Aerosol Species ACAJ
+     Added an Accumulation Mode for Aerosol Species AMGJ
+     Added an Accumulation Mode for Aerosol Species AKJ
+     Added an Accumulation Mode for Aerosol Species AMNJ
+     Added a Coarse Mode for Aerosol Species ACORS
+     Added a Coarse Mode for Aerosol Species ASOIL
+     Added an Aitken Mode for Aerosol Species NUMATKN
+     Added an Accumulation Mode for Aerosol Species NUMACC
+     Added a Coarse Mode for Aerosol Species NUMCOR
+     Added an Aitken Mode for Aerosol Species SRFATKN
+     Added an Accumulation Mode for Aerosol Species SRFACC
+     Added a Coarse Mode for Aerosol Species SRFCOR
+     Added an Accumulation Mode for Aerosol Species AORGH2OJ
+     Added an Aitken Mode for Aerosol Species AH2OI
+     Added an Accumulation Mode for Aerosol Species AH2OJ
+     Added a Coarse Mode for Aerosol Species AH2OK
+     Added an Aitken Mode for Aerosol Species AH3OPI
+     Added an Accumulation Mode for Aerosol Species AH3OPJ
+     Added a Coarse Mode for Aerosol Species AH3OPK
+     Added an Aitken Mode for Aerosol Species ANAI
+     Added an Accumulation Mode for Aerosol Species ANAJ
+     Added an Aitken Mode for Aerosol Species ACLI
+     Added an Accumulation Mode for Aerosol Species ACLJ
+     Added a Coarse Mode for Aerosol Species ACLK
+     Added a Coarse Mode for Aerosol Species ASEACAT
+     Added an Aitken Mode for Aerosol Species APOCI
+     Added an Accumulation Mode for Aerosol Species APOCJ
+     Added an Aitken Mode for Aerosol Species APNCOMI
+     Added an Accumulation Mode for Aerosol Species APNCOMJ
+     Added an Accumulation Mode for Aerosol Species AOP3J
+     Added an Aitken Mode for Aerosol Species AROCN2ALKI
+     Added an Accumulation Mode for Aerosol Species AROCN2ALKJ
+     Added an Aitken Mode for Aerosol Species AROCN1ALKI
+     Added an Accumulation Mode for Aerosol Species AROCN1ALKJ
+     Added an Aitken Mode for Aerosol Species AROCP0ALKI
+     Added an Accumulation Mode for Aerosol Species AROCP0ALKJ
+     Added an Aitken Mode for Aerosol Species AROCP1ALKI
+     Added an Accumulation Mode for Aerosol Species AROCP1ALKJ
+     Added an Accumulation Mode for Aerosol Species AROCP2ALKJ
+     Added an Accumulation Mode for Aerosol Species AROCP3ALKJ
+     Added an Aitken Mode for Aerosol Species AROCN2OXY2I
+     Added an Accumulation Mode for Aerosol Species AROCN2OXY2J
+     Added an Aitken Mode for Aerosol Species AROCN2OXY4I
+     Added an Accumulation Mode for Aerosol Species AROCN2OXY4J
+     Added an Aitken Mode for Aerosol Species AROCN2OXY8I
+     Added an Accumulation Mode for Aerosol Species AROCN2OXY8J
+     Added an Aitken Mode for Aerosol Species AROCN1OXY1I
+     Added an Accumulation Mode for Aerosol Species AROCN1OXY1J
+     Added an Aitken Mode for Aerosol Species AROCN1OXY3I
+     Added an Accumulation Mode for Aerosol Species AROCN1OXY3J
+     Added an Aitken Mode for Aerosol Species AROCN1OXY6I
+     Added an Accumulation Mode for Aerosol Species AROCN1OXY6J
+     Added an Aitken Mode for Aerosol Species AROCP0OXY2I
+     Added an Accumulation Mode for Aerosol Species AROCP0OXY2J
+     Added an Aitken Mode for Aerosol Species AROCP0OXY4I
+     Added an Accumulation Mode for Aerosol Species AROCP0OXY4J
+     Added an Aitken Mode for Aerosol Species AROCP1OXY1I
+     Added an Accumulation Mode for Aerosol Species AROCP1OXY1J
+     Added an Aitken Mode for Aerosol Species AROCP1OXY3I
+     Added an Accumulation Mode for Aerosol Species AROCP1OXY3J
+     Added an Accumulation Mode for Aerosol Species AROCP2OXY2J
+     Added an Accumulation Mode for Aerosol Species AROCP3OXY2J
+     Added an Accumulation Mode for Aerosol Species AISO3NOSJ
+     Added an Accumulation Mode for Aerosol Species AISO3OSJ
+     Added an Accumulation Mode for Aerosol Species AISO4J
+     Added an Accumulation Mode for Aerosol Species AISO5J
+     Added an Accumulation Mode for Aerosol Species ATRPNJ
+     Added an Accumulation Mode for Aerosol Species AHONITJ
+     Added an Accumulation Mode for Aerosol Species ASEASTJ
+     Added an Accumulation Mode for Aerosol Species AMTN1J
+     Added an Accumulation Mode for Aerosol Species AHMSJ
+     
+     Total number of aerosol species:  93
+     
+
+     |> Map Aerosol Species:
+     +========================
+     Aerosol Species ASO4 found in AE namelist.                                      
+     Aerosol Species ANO3 found in AE namelist.                                      
+     Aerosol Species ACL found in AE namelist.                                       
+     Aerosol Species ANH4 found in AE namelist.                                      
+     Aerosol Species ANA found in AE namelist.                                       
+     Aerosol Species AMG found in AE namelist.                                       
+     Aerosol Species AK found in AE namelist.                                        
+     Aerosol Species ACA found in AE namelist.                                       
+     Aerosol Species AFE found in AE namelist.                                       
+     Aerosol Species AMN found in AE namelist.                                       
+     Aerosol Species AH2O found in AE namelist.                                      
+     Aerosol Species AH3OP found in AE namelist.                                     
+     Aerosol Species ASOIL found in AE namelist.                                     
+     Aerosol Species ACORS found in AE namelist.                                     
+     Aerosol Species ASEACAT found in AE namelist.                                   
+     Aerosol Species APOC found in AE namelist.                                      
+     Aerosol Species APNCOM found in AE namelist.                                    
+     Aerosol Species ASEAST found in AE namelist.                                    
+     Aerosol Species AHMS found in AE namelist.                                      
+     Aerosol Species AORGH2O found in AE namelist.                                   
+ 
+ 
+     ==========================================================
+     |>---   INITIALIZE OA EXTRACTION TO AEROSOL MODULE   ---<|
+     ==========================================================
+
+     |> Map Organic Aerosol and Vapor Species:
+     +==========================================
+     Aerosol Species AHOM found in AE namelist.                                      
+     Aerosol Species AELHOM found in AE namelist.                                    
+     Aerosol Species AISO3NOS found in AE namelist.                                  
+     Aerosol Species AISO3OS found in AE namelist.                                   
+     Aerosol Species AORGC found in AE namelist.                                     
+     Aerosol Species APOC found in AE namelist.                                      
+     Aerosol Species APNCOM found in AE namelist.                                    
+     Aerosol Species AOP3 found in AE namelist.                                      
+     Aerosol Species ASOAT found in AE namelist.                                     
+     Aerosol Species AROCN2ALK found in AE namelist.                                 
+     Aerosol Species AROCN1ALK found in AE namelist.                                 
+     Aerosol Species AROCP0ALK found in AE namelist.                                 
+     Aerosol Species AROCP1ALK found in AE namelist.                                 
+     Aerosol Species AROCP2ALK found in AE namelist.                                 
+     Aerosol Species AROCP3ALK found in AE namelist.                                 
+     Aerosol Species AROCN2OXY2 found in AE namelist.                                
+     Aerosol Species AROCN2OXY4 found in AE namelist.                                
+     Aerosol Species AROCN2OXY8 found in AE namelist.                                
+     Aerosol Species AROCN1OXY1 found in AE namelist.                                
+     Aerosol Species AROCN1OXY3 found in AE namelist.                                
+     Aerosol Species AROCN1OXY6 found in AE namelist.                                
+     Aerosol Species AROCP0OXY2 found in AE namelist.                                
+     Aerosol Species AROCP0OXY4 found in AE namelist.                                
+     Aerosol Species AROCP1OXY1 found in AE namelist.                                
+     Aerosol Species AROCP1OXY3 found in AE namelist.                                
+     Aerosol Species AROCP2OXY2 found in AE namelist.                                
+     Aerosol Species AROCP3OXY2 found in AE namelist.                                
+     Aerosol Species AISO4 found in AE namelist.                                     
+     Aerosol Species AISO5 found in AE namelist.                                     
+     Aerosol Species ATRPN found in AE namelist.                                     
+     Aerosol Species AHONIT found in AE namelist.                                    
+     Aerosol Species AGLYOLIG found in AE namelist.                                  
+     Aerosol Species AMTN1 found in AE namelist.                                     
+     Aerosol Species AHOM found in AE namelist.                                      
+     Aerosol Species AELHOM found in AE namelist.                                    
+     Aerosol Species AISO3NOS found in AE namelist.                                  
+     Aerosol Species AISO3OS found in AE namelist.                                   
+     Aerosol Species AORGC found in AE namelist.                                     
+     Aerosol Species APOC found in AE namelist.                                      
+     Aerosol Species APNCOM found in AE namelist.                                    
+     Aerosol Species AOP3 found in AE namelist.                                      
+     Aerosol Species ASOAT found in AE namelist.                                     
+     Aerosol Species AROCN2ALK found in AE namelist.                                 
+     Aerosol Species AROCN1ALK found in AE namelist.                                 
+     Aerosol Species AROCP0ALK found in AE namelist.                                 
+     Aerosol Species AROCP1ALK found in AE namelist.                                 
+     Aerosol Species AROCP2ALK found in AE namelist.                                 
+     Aerosol Species AROCP3ALK found in AE namelist.                                 
+     Aerosol Species AROCN2OXY2 found in AE namelist.                                
+     Aerosol Species AROCN2OXY4 found in AE namelist.                                
+     Aerosol Species AROCN2OXY8 found in AE namelist.                                
+     Aerosol Species AROCN1OXY1 found in AE namelist.                                
+     Aerosol Species AROCN1OXY3 found in AE namelist.                                
+     Aerosol Species AROCN1OXY6 found in AE namelist.                                
+     Aerosol Species AROCP0OXY2 found in AE namelist.                                
+     Aerosol Species AROCP0OXY4 found in AE namelist.                                
+     Aerosol Species AROCP1OXY1 found in AE namelist.                                
+     Aerosol Species AROCP1OXY3 found in AE namelist.                                
+     Aerosol Species AROCP2OXY2 found in AE namelist.                                
+     Aerosol Species AROCP3OXY2 found in AE namelist.                                
+     Aerosol Species AISO4 found in AE namelist.                                     
+     Aerosol Species AISO5 found in AE namelist.                                     
+     Aerosol Species ATRPN found in AE namelist.                                     
+     Aerosol Species AHONIT found in AE namelist.                                    
+     Aerosol Species AGLYOLIG found in AE namelist.                                  
+     Aerosol Species AMTN1 found in AE namelist.                                     
+     Aerosol Species AHOM found in AE namelist.                                      
+     Aerosol Species AELHOM found in AE namelist.                                    
+     Aerosol Species AISO3NOS found in AE namelist.                                  
+     Aerosol Species AISO3OS found in AE namelist.                                   
+     Aerosol Species AORGC found in AE namelist.                                     
+     Aerosol Species APOC found in AE namelist.                                      
+     Aerosol Species APNCOM found in AE namelist.                                    
+     Aerosol Species AOP3 found in AE namelist.                                      
+     Aerosol Species ASOAT found in AE namelist.                                     
+     Aerosol Species AROCN2ALK found in AE namelist.                                 
+     Aerosol Species AROCN1ALK found in AE namelist.                                 
+     Aerosol Species AROCP0ALK found in AE namelist.                                 
+     Aerosol Species AROCP1ALK found in AE namelist.                                 
+     Aerosol Species AROCP2ALK found in AE namelist.                                 
+     Aerosol Species AROCP3ALK found in AE namelist.                                 
+     Aerosol Species AROCN2OXY2 found in AE namelist.                                
+     Aerosol Species AROCN2OXY4 found in AE namelist.                                
+     Aerosol Species AROCN2OXY8 found in AE namelist.                                
+     Aerosol Species AROCN1OXY1 found in AE namelist.                                
+     Aerosol Species AROCN1OXY3 found in AE namelist.                                
+     Aerosol Species AROCN1OXY6 found in AE namelist.                                
+     Aerosol Species AROCP0OXY2 found in AE namelist.                                
+     Aerosol Species AROCP0OXY4 found in AE namelist.                                
+     Aerosol Species AROCP1OXY1 found in AE namelist.                                
+     Aerosol Species AROCP1OXY3 found in AE namelist.                                
+     Aerosol Species AROCP2OXY2 found in AE namelist.                                
+     Aerosol Species AROCP3OXY2 found in AE namelist.                                
+     Aerosol Species AISO4 found in AE namelist.                                     
+     Aerosol Species AISO5 found in AE namelist.                                     
+     Aerosol Species ATRPN found in AE namelist.                                     
+     Aerosol Species AHONIT found in AE namelist.                                    
+     Aerosol Species AGLYOLIG found in AE namelist.                                  
+     Aerosol Species AMTN1 found in AE namelist.                                     
+     Aerosol Species AORGC found in AE namelist.                                     
+
+     |> Reading Family Definitions from Control File:
+     +=================================================
+     No chemical families have been added by the user. Bulk aerosol species are      
+       still available as chemical families.
+     
