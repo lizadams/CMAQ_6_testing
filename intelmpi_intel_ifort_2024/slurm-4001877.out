@@ -1,0 +1,2356 @@
+Start Model Run At  Mon Aug 17 11:09:46 AM EDT 2026
+Compiler is set to intel
+0: Event not found.
+
+Working Directory is /proj/ie/proj/CMAS/CMASOps2026/CMAQ_CMAS_6/intelmpi_intel_ifort_2024/CCTM/scripts
+Build Directory is /proj/ie/proj/CMAS/CMASOps2026/CMAQ_CMAS_6/intelmpi_intel_ifort_2024/CCTM/scripts/BLD_CCTM_v6_intel_debug
+Output Directory is /work/users/l/i/lizadams/CMAQv6.0_2022_12SE1_Benchmark_2day//output_CCTM_v6_intel_Bench_2022_12SE1_debug
+Log Directory is /work/users/l/i/lizadams/CMAQv6.0_2022_12SE1_Benchmark_2day//output_CCTM_v6_intel_Bench_2022_12SE1_debug/LOGS
+Executable Name is CCTM_v6.exe
+
+---CMAQ EXECUTION ID: CMAQ_CCTMv6_lizadams_20260817_150949_532854064 ---
+
+Set up input and output files for Day 2022-07-01.
+
+Existing Logs and Output Files for Day 2022-07-01 Will Be Deleted
+rm: No match.
+
+CMAQ Processing of Day 20220701 Began at Mon Aug 17 11:10:01 AM EDT 2026
+
+                  CTM_APPL  |  v6_intel_Bench_2022_12SE1_debug_20220701
+#================================================================================#        
+#|                                                                              |#        
+#|               The Community Multiscale Air Quality (CMAQ) Model              |#        
+#|                                  Version 6.0_alpha1                          |#        
+#|                                                                              |#        
+#|                          Built and Maintained by the                         |#        
+#|                        Office of Research and Development                    |#        
+#|                   United States Environmental Protection Agency              |#        
+#|                                                                              |#        
+#|                            https://www.epa.gov/cmaq                          |#        
+#|                                                                              |#        
+#|       Source Code:   https://www.github.com/USEPA/cmaq/tree/master           |#        
+#|       Documentation: https://www.github.com/USEPA/cmaq/tree/master/DOCS      |#        
+#|                                                                              |#        
+#|         The CMAQ Model is tested and released with cooperation from          |#        
+#|         the Community Modeling and Analysis System (CMAS) Center via         |#        
+#|         contract support. CMAS is managed by the Institute for the           |#        
+#|         Environment, University of North Carolina at Chapel Hill.            |#        
+#|         CMAS URL: (https://www.cmascenter.org)                               |#        
+#|                                                                              |#        
+#================================================================================#        
+ 
+ 
+     ==================================
+     |>---   INITIALIZE I/O-API   ---<|
+     ==================================
+                                                                     
+     This program uses the EPA-AREAL/MCNC-EnvPgms/BAMS/ UNC IE       
+     Models-3 I/O Applications Programming Interface, [I/O API]      
+     which is built on top of the netCDF I/O library (Copyright      
+     993, 1996 University Corporation for Atmospheric Research       
+     Unidata Program) and the PVM parallel-programming library       
+     (from Oak Ridge National Laboratory).                           
+     Copyright (C) 1992-2002 MCNC,                                   
+     (C) 1992-2018 Carlie J. Coats, Jr.,                             
+     (C) 2003-2012 Baron Advanced Meteorological Systems, LLC, and   
+     (C) 2014-2023 UNC Institute for the Environment.                
+     Released under the GNU LGPL  License, version 2.1.  See URL     
+                                                                     
+         https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html     
+                                                                     
+     for conditions of use.                                          
+                                                                     
+     ioapi-3.2: $Id: init3.F90 247 2023-03-22 15:59:19Z coats $
+     netCDF version 4.8.1 of Aug 13 2026 10:00:20 $
+      
+ 
+ 
+     ===========================================
+     |>---   ENVIRONMENT VARIABLE REPORT   ---<|
+     ===========================================
+
+     |> Grid and High-Level Model Parameters:
+     +=========================================
+        ---Env Variable---  |  ---Value---
+      --------------------------------------------------------------------------------
+                       BLD  |             (default)
+                    OUTDIR  |  /work/users/l/i/lizadams/CMAQv6.0_2022_12SE1_Benchmark_2day//output_CCTM_v6_intel_Bench_2022_12SE1_debug
+                 NEW_START  |           T
+            IGNORE_SOILINP  |           F (default)
+              EXECUTION_ID  |  CMAQ_CCTMv6_lizadams_20260817_150949_532854064
+                 GRID_NAME  |  SE60BENCH
+                 CTM_TSTEP  |       10000
+                CTM_RUNLEN  |      240000
+              CTM_PROGNAME  |  DRIVER (default)
+                CTM_STDATE  |     2022182
+                CTM_STTIME  |           0
+               NPCOL_NPROW  |  12 8
+               CTM_MAXSYNC  |         300
+               CTM_MINSYNC  |          60
+
+     |> Multiprocess control, output and error checking:
+     +====================================================
+        ---Env Variable---  |  ---Value---
+      --------------------------------------------------------------------------------
+           PRINT_PROC_TIME  |           T
+               FL_ERR_STOP  |           F
+              CTM_MIO_FILE  |           F (default)
+                 CTM_CKSUM  |           T
+          AVG_FILE_ENDTIME  |           F
+             AVG_CONC_SPCS  |  ALL
+                 CONC_SPCS  |  O3 NO ANO3I ANO3J NO2 NH3 ANH4I ANH4J ASO4I ASO4J
+           ACONC_BLEV_ELEV  |   1 1
+            CONC_BLEV_ELEV  |   1 1
+           IOAPI_LOG_WRITE  |           F
+                   VERTEXT  |           F
+        VERTEXT_COORD_PATH  |  /proj/ie/proj/CMAS/CMASOps2026/CMAQ_CMAS_6/intelmpi_intel_ifort_2024/CCTM/scripts/lonlat.csv
+             gc_matrix_nml  |  /proj/ie/proj/CMAS/CMASOps2026/CMAQ_CMAS_6/intelmpi_intel_ifort_2024/CCTM/scripts/BLD_CCTM_v6_intel_debug/GC_cracmm3.nml
+             ae_matrix_nml  |  /proj/ie/proj/CMAS/CMASOps2026/CMAQ_CMAS_6/intelmpi_intel_ifort_2024/CCTM/scripts/BLD_CCTM_v6_intel_debug/AE_cracmm3.nml
+             nr_matrix_nml  |  /proj/ie/proj/CMAS/CMASOps2026/CMAQ_CMAS_6/intelmpi_intel_ifort_2024/CCTM/scripts/BLD_CCTM_v6_intel_debug/NR_cracmm3.nml
+             tr_matrix_nml  |  /proj/ie/proj/CMAS/CMASOps2026/CMAQ_CMAS_6/intelmpi_intel_ifort_2024/CCTM/scripts/BLD_CCTM_v6_intel_debug/Species_Table_TR_0.nml
+
+     |> Chemistry and Photolysis:
+     +=============================
+        ---Env Variable---  |  ---Value---
+      --------------------------------------------------------------------------------
+                      MECH  |  cracmm3
+              CTM_PHOTDIAG  |           F
+            AEROSOL_OPTICS  |           3
+
+      --ATOL settings are in ppmV.--
+
+             GEAR_MAX_ATOL  |   0.100E-06 (default)
+             GEAR_MIN_ATOL  |   0.100E-08 (default)
+           GEAR_CONC_FLOOR  |   0.100E-11 (default)
+                 GEAR_RTOL  |   0.100E-02 (default)
+                   RB_RTOL  |   0.100E-02 (default)
+                   RB_ATOL  |   0.100E-06 (default)
+                  CTM_PVO3  |           F
+
+     |> Aerosols:
+     +=============
+        ---Env Variable---  |  ---Value---
+      --------------------------------------------------------------------------------
+                   AERO_MT  |  HYB
+            AERO_DYN_TSTEP  |          90
+             BC_AERO_M2WET  |           F
+             BC_AERO_M2USE  |           T
+              STM_SO4TRACK  |           F
+
+     |> Cloud Processes:
+     +====================
+        ---Env Variable---  |  ---Value---
+      --------------------------------------------------------------------------------
+                  CLD_DIAG  |           F
+
+     |> Air-Surface Exchange Processes:
+     +===================================
+        ---Env Variable---  |  ---Value---
+      --------------------------------------------------------------------------------
+                PX_VERSION  |           T
+                CTM_ABFLUX  |           T
+                CTM_MOSAIC  |           F
+              CTM_SFC_HONO  |           T
+               CLM_VERSION  |           F
+              NOAH_VERSION  |           F
+             CTM_DEPV_FILE  |           F
+                CTM_HGBIDI  |           F
+         CTM_BIDI_FERT_NH3  |           T
+             CTM_USE_STAGE  |           T
+           CTM_WBDUST_BELD  |  UNKNOWN (default)
+             STAGECTRL_NML  |  /proj/ie/proj/CMAS/CMASOps2026/CMAQ_CMAS_6/intelmpi_intel_ifort_2024/CCTM/scripts/BLD_CCTM_v6_intel_debug/CMAQ_Control_STAGE.nml
+             CTM_STAGE_P22  |           F
+             CTM_STAGE_E20  |           T
+             CTM_STAGE_S22  |           F
+
+     |> Transport Processes:
+     +========================
+        ---Env Variable---  |  ---Value---
+      --------------------------------------------------------------------------------
+           VDIFF_DIAG_FILE  |           F
+            SIGMA_SYNC_TOP  |   0.700E+00
+              ADV_HDIV_LIM  |   0.900E+00 (default)
+               CTM_ADV_CFL  |   0.950E+00
+                     KZMIN  |           T
+                KZU_CUSTOM  |   0.100E+01 (default)
+                  CTM_WVEL  |           T
+             CTM_GRAV_SETL  |           T
+
+     |> Emissions Parameters:
+     +=========================
+        ---Env Variable---  |  ---Value---
+      --------------------------------------------------------------------------------
+             CMAQ_CTRL_NML  |  /proj/ie/proj/CMAS/CMASOps2026/CMAQ_CMAS_6/intelmpi_intel_ifort_2024/CCTM/scripts/BLD_CCTM_v6_intel_debug/CMAQ_Control.nml
+          CMAQ_CH_CTRL_NML  |  /proj/ie/proj/CMAS/CMASOps2026/CMAQ_CMAS_6/intelmpi_intel_ifort_2024/CCTM/scripts/BLD_CCTM_v6_intel_debug/CMAQ_Chem_Control_cracmm3.nml
+                 N_EMIS_GR  |           2
+                 N_EMIS_TR  |           0 (default)
+               CTM_EMISCHK  |           F
+           CTM_BIOGEMIS_BE  |           T
+           CTM_BIOGEMIS_MG  |           F
+             USE_MEGAN_LAI  |           F (default)
+              MGN_ONLN_DEP  |           F (default)
+               BDSNP_MEGAN  |           F
+                USE_SEGA_N  |           F
+             USE_SEGA_N_EF  |           F
+                 BIOG_SPRO  |  DEFAULT (default)
+                B3GTS_DIAG  |           F
+              CTM_MGEMDIAG  |           F (default)
+            CTM_OCEAN_CHEM  |           T
+               CTM_WB_DUST  |           T
+             CTM_BROWN_VEG  |           T
+           CTM_DUSTEM_DIAG  |           F
+              CTM_SSEMDIAG  |           F
+              CTM_MET_EMIS  |           F (default)
+         CTM_MET_EMIS_DIAG  |           F (default)
+          CTM_MET_EMIS_HUM  |           F (default)
+            CTM_LNO_ONLINE  |           T
+             LTNG_ASSIM_DT  |           0 (default)
+             USE_LTNG_DATA  |           T
+                  LTNGDIAG  |           F
+                   MOLSNCG  |   0.350E+03 (default)
+                   MOLSNIC  |   0.350E+03 (default)
+                LNO_OPTION  |           1
+                 N_EMIS_PT  |          11
+                    IPVERT  |           0 (default)
+             EMIS_SYM_DATE  |           F (default)
+
+     |> Process Analysis Parameters:
+     +================================
+        ---Env Variable---  |  ---Value---
+      --------------------------------------------------------------------------------
+                CTM_PROCAN  |           F
+                CTM_BUDGET  |  /work/users/l/i/lizadams/CMAQv6.0_2022_12SE1_Benchmark_2day//output_CCTM_v6_intel_Bench_2022_12SE1_debug/CCTM_BUDGET_v6_intel_Bench_2022_12SE1_debug_20220701.txt -v
+forrtl: severe (71): integer divide by zero
+Image              PC                Routine            Line        Source             
+libc.so.6          000014E99D8681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E99E7FA224  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E99E608A94  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E99E82D29B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E99E82B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E99E56315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E99E562EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E99E5CB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E99E5CB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E99E5C8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E99E5BB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  000014E99DEF6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014E99D85158E  Unknown               Unknown  Unknown
+libc.so.6          000014E99D851649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+                 MET_TSTEP  |       10000 (default)
+
+     MET data determined based on WRF ARW version 4.4.2
+
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+libc.so.6          000014B28E0681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014B28EE0F276  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014B28F02E57B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014B28F02B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014B28ED6315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014B28ED62EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014B28EDCB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014B28EDCB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014B28EDC8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014B28EDBB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  000014B28E6F6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014B28E05158E  Unknown               Unknown  Unknown
+libc.so.6          000014B28E051649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+ 
+          -=-  MPP Processor-to-Subdomain Map  -=-
+                 Number of Processors =  96
+    ____________________________________________________
+    |                                                  |
+    |  PE    #Cols    Col_Range     #Rows    Row_Range |
+    |__________________________________________________|
+    |                                                  |
+    |  0        9      1:   9         10      1:  10   |
+    |  1        9     10:  18         10      1:  10   |
+    |  2        9     19:  27         10      1:  10   |
+    |  3        9     28:  36         10      1:  10   |
+    |  4        8     37:  44         10      1:  10   |
+    |  5        8     45:  52         10      1:  10   |
+    |  6        8     53:  60         10      1:  10   |
+    |  7        8     61:  68         10      1:  10   |
+    |  8        8     69:  76         10      1:  10   |
+    |  9        8     77:  84         10      1:  10   |
+    | 10        8     85:  92         10      1:  10   |
+    | 11        8     93: 100         10      1:  10   |
+    | 12        9      1:   9         10     11:  20   |
+    | 13        9     10:  18         10     11:  20   |
+    | 14        9     19:  27         10     11:  20   |
+    | 15        9     28:  36         10     11:  20   |
+    | 16        8     37:  44         10     11:  20   |
+    | 17        8     45:  52         10     11:  20   |
+    | 18        8     53:  60         10     11:  20   |
+    | 19        8     61:  68         10     11:  20   |
+    | 20        8     69:  76         10     11:  20   |
+    | 21        8     77:  84         10     11:  20   |
+    | 22        8     85:  92         10     11:  20   |
+    | 23        8     93: 100         10     11:  20   |
+    | 24        9      1:   9         10     21:  30   |
+    | 25        9     10:  18         10     21:  30   |
+    | 26        9     19:  27         10     21:  30   |
+    | 27        9     28:  36         10     21:  30   |
+    | 28        8     37:  44         10     21:  30   |
+    | 29        8     45:  52         10     21:  30   |
+    | 30        8     53:  60         10     21:  30   |
+    | 31        8     61:  68         10     21:  30   |
+    | 32        8     69:  76         10     21:  30   |
+    | 33        8     77:  84         10     21:  30   |
+    | 34        8     85:  92         10     21:  30   |
+    | 35        8     93: 100         10     21:  30   |
+    | 36        9      1:   9         10     31:  40   |
+    | 37        9     10:  18         10     31:  40   |
+    | 38        9     19:  27         10     31:  40   |
+    | 39        9     28:  36         10     31:  40   |
+    | 40        8     37:  44         10     31:  40   |
+    | 41        8     45:  52         10     31:  40   |
+    | 42        8     53:  60         10     31:  40   |
+    | 43        8     61:  68         10     31:  40   |
+    | 44        8     69:  76         10     31:  40   |
+    | 45        8     77:  84         10     31:  40   |
+    | 46        8     85:  92         10     31:  40   |
+    | 47        8     93: 100         10     31:  40   |
+    | 48        9      1:   9         10     41:  50   |
+    | 49        9     10:  18         10     41:  50   |
+    | 50        9     19:  27         10     41:  50   |
+    | 51        9     28:  36         10     41:  50   |
+    | 52        8     37:  44         10     41:  50   |
+    | 53        8     45:  52         10     41:  50   |
+    | 54        8     53:  60         10     41:  50   |
+    | 55        8     61:  68         10     41:  50   |
+    | 56        8     69:  76         10     41:  50   |
+    | 57        8     77:  84         10     41:  50   |
+    | 58        8     85:  92         10     41:  50   |
+    | 59        8     93: 100         10     41:  50   |
+    | 60        9      1:   9         10     51:  60   |
+    | 61        9     10:  18         10     51:  60   |
+    | 62        9     19:  27         10     51:  60   |
+    | 63        9     28:  36         10     51:  60   |
+    | 64        8     37:  44         10     51:  60   |
+    | 65        8     45:  52         10     51:  60   |
+    | 66        8     53:  60         10     51:  60   |
+    | 67        8     61:  68         10     51:  60   |
+    | 68        8     69:  76         10     51:  60   |
+    | 69        8     77:  84         10     51:  60   |
+    | 70        8     85:  92         10     51:  60   |
+    | 71        8     93: 100         10     51:  60   |
+    | 72        9      1:   9         10     61:  70   |
+    | 73        9     10:  18         10     61:  70   |
+    | 74        9     19:  27         10     61:  70   |
+    | 75        9     28:  36         10     61:  70   |
+    | 76        8     37:  44         10     61:  70   |
+    | 77        8     45:  52         10     61:  70   |
+    | 78        8     53:  60         10     61:  70   |
+    | 79        8     61:  68         10     61:  70   |
+    | 80        8     69:  76         10     61:  70   |
+    | 81        8     77:  84         10     61:  70   |
+    | 82        8     85:  92         10     61:  70   |
+    | 83        8     93: 100         10     61:  70   |
+    | 84        9      1:   9         10     71:  80   |
+    | 85        9     10:  18         10     71:  80   |
+    | 86        9     19:  27         10     71:  80   |
+    | 87        9     28:  36         10     71:  80   |
+    | 88        8     37:  44         10     71:  80   |
+    | 89        8     45:  52         10     71:  80   |
+    | 90        8     53:  60         10     71:  80   |
+    | 91        8     61:  68         10     71:  80   |
+    | 92        8     69:  76         10     71:  80   |
+    | 93        8     77:  84         10     71:  80   |
+    | 94        8     85:  92         10     71:  80   |
+    | 95        8     93: 100         10     71:  80   |
+    |__________________________________________________|
+ 
+forrtl: severe (71): integer divide by zero
+Image              PC                Routine            Line        Source             
+libc.so.6          0000154A296681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000154A2A5FA224  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000154A2A408A94  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000154A2A62D29B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000154A2A62B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000154A2A36315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000154A2A362EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000154A2A3CB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000154A2A3CB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000154A2A3C8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000154A2A3BB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  0000154A29CF6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          0000154A2965158E  Unknown               Unknown  Unknown
+libc.so.6          0000154A29651649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+libc.so.6          00001506C2C681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001506C3A0F276  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001506C3C2E57B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001506C3C2B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001506C396315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001506C3962EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001506C39CB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001506C39CB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001506C39C8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001506C39BB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  00001506C32F6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          00001506C2C5158E  Unknown               Unknown  Unknown
+libc.so.6          00001506C2C51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: severe (71): integer divide by zero
+Image              PC                Routine            Line        Source             
+libc.so.6          00001548402681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001548411FA224  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000154841008A94  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000015484122D29B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000015484122B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000154840F6315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000154840F62EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000154840FCB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000154840FCB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000154840FC8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000154840FBB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  00001548408F6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000015484025158E  Unknown               Unknown  Unknown
+libc.so.6          0000154840251649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: severe (71): integer divide by zero
+Image              PC                Routine            Line        Source             
+libc.so.6          000014FFB64681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014FFB73FA224  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014FFB7208A94  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014FFB742D29B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014FFB742B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014FFB716315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014FFB7162EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014FFB71CB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014FFB71CB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014FFB71C8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014FFB71BB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  000014FFB6AF6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014FFB645158E  Unknown               Unknown  Unknown
+libc.so.6          000014FFB6451649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+libc.so.6          00001502E26681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001502E340F276  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001502E362E57B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001502E362B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001502E336315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001502E3362EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001502E33CB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001502E33CB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001502E33C8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001502E33BB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  00001502E2CF6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          00001502E265158E  Unknown               Unknown  Unknown
+libc.so.6          00001502E2651649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+libc.so.6          000015149F8681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001514A060F276  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001514A082E57B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001514A082B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001514A056315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001514A0562EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001514A05CB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001514A05CB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001514A05C8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001514A05BB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  000015149FEF6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000015149F85158E  Unknown               Unknown  Unknown
+libc.so.6          000015149F851649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+libc.so.6          000015454DE681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000015454EC0F276  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000015454EE2E57B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000015454EE2B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000015454EB6315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000015454EB62EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000015454EBCB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000015454EBCB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000015454EBC8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000015454EBBB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  000015454E4F6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000015454DE5158E  Unknown               Unknown  Unknown
+libc.so.6          000015454DE51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+libc.so.6          000014F2A88681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014F2A960F276  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014F2A982E57B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014F2A982B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014F2A956315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014F2A9562EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014F2A95CB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014F2A95CB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014F2A95C8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014F2A95BB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  000014F2A8EF6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014F2A885158E  Unknown               Unknown  Unknown
+libc.so.6          000014F2A8851649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: severe (71): integer divide by zero
+Image              PC                Routine            Line        Source             
+libc.so.6          000014F2D56681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014F2D67FA224  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014F2D6608A94  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014F2D682D29B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014F2D682B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014F2D656315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014F2D6562EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014F2D65CB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014F2D65CB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014F2D65C8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014F2D65BB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  000014F2D5EF6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014F2D565158E  Unknown               Unknown  Unknown
+libc.so.6          000014F2D5651649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+libc.so.6          000014A39C2681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A39D00F276  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A39D22E57B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A39D22B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A39CF6315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A39CF62EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A39CFCB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A39CFCB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A39CFC8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A39CFBB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  000014A39C8F6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014A39C25158E  Unknown               Unknown  Unknown
+libc.so.6          000014A39C251649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: severe (71): integer divide by zero
+Image              PC                Routine            Line        Source             
+libc.so.6          000014780F6681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001478107FA224  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000147810608A94  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014781082D29B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014781082B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014781056315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000147810562EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001478105CB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001478105CB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001478105C8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001478105BB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  000014780FEF6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014780F65158E  Unknown               Unknown  Unknown
+libc.so.6          000014780F651649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: severe (71): integer divide by zero
+Image              PC                Routine            Line        Source             
+libc.so.6          000014B788E681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014B789FFA224  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014B789E08A94  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014B78A02D29B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014B78A02B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014B789D6315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014B789D62EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014B789DCB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014B789DCB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014B789DC8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014B789DBB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  000014B7896F6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014B788E5158E  Unknown               Unknown  Unknown
+libc.so.6          000014B788E51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: severe (71): integer divide by zero
+Image              PC                Routine            Line        Source             
+libc.so.6          0000153AA24681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000153AA35FA224  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000153AA3408A94  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000153AA362D29B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000153AA362B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000153AA336315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000153AA3362EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000153AA33CB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000153AA33CB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000153AA33C8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000153AA33BB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  0000153AA2CF6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          0000153AA245158E  Unknown               Unknown  Unknown
+libc.so.6          0000153AA2451649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: severe (71): integer divide by zero
+Image              PC                Routine            Line        Source             
+libc.so.6          00001512B9E681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001512BADFA224  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001512BAC08A94  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001512BAE2D29B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001512BAE2B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001512BAB6315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001512BAB62EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001512BABCB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001512BABCB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001512BABC8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001512BABBB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  00001512BA4F6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          00001512B9E5158E  Unknown               Unknown  Unknown
+libc.so.6          00001512B9E51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+libc.so.6          000014690F4681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014691020F276  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014691042E57B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014691042B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014691016315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000146910162EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001469101CB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001469101CB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001469101C8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001469101BB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  000014690FAF6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014690F45158E  Unknown               Unknown  Unknown
+libc.so.6          000014690F451649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+libc.so.6          0000153C572681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000153C5800F276  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000153C5822E57B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000153C5822B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000153C57F6315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000153C57F62EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000153C57FCB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000153C57FCB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000153C57FC8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000153C57FBB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  0000153C578F6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          0000153C5725158E  Unknown               Unknown  Unknown
+libc.so.6          0000153C57251649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+libc.so.6          0000149F36C681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000149F37C0F276  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000149F37E2E57B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000149F37E2B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000149F37B6315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000149F37B62EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000149F37BCB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000149F37BCB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000149F37BC8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000149F37BBB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  0000149F374F6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          0000149F36C5158E  Unknown               Unknown  Unknown
+libc.so.6          0000149F36C51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: severe (71): integer divide by zero
+Image              PC                Routine            Line        Source             
+libc.so.6          000014C015E681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014C016DFA224  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014C016C08A94  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014C016E2D29B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014C016E2B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014C016B6315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014C016B62EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014C016BCB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014C016BCB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014C016BC8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014C016BBB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  000014C0164F6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014C015E5158E  Unknown               Unknown  Unknown
+libc.so.6          000014C015E51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+libc.so.6          000014BE4BC681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014BE4CA0F276  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014BE4CC2E57B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014BE4CC2B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014BE4C96315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014BE4C962EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014BE4C9CB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014BE4C9CB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014BE4C9C8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014BE4C9BB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  000014BE4C2F6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014BE4BC5158E  Unknown               Unknown  Unknown
+libc.so.6          000014BE4BC51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+libc.so.6          00001539376681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000015393860F276  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000015393882E57B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000015393882B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000015393856315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000153938562EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001539385CB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001539385CB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001539385C8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001539385BB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  0000153937EF6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000015393765158E  Unknown               Unknown  Unknown
+libc.so.6          0000153937651649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+libc.so.6          0000149415A681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014941680F276  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000149416A2E57B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000149416A2B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014941676315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000149416762EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001494167CB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001494167CB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001494167C8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001494167BB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  00001494160F6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          0000149415A5158E  Unknown               Unknown  Unknown
+libc.so.6          0000149415A51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+libc.so.6          000014E5CEE681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E5CFC0F276  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E5CFE2E57B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E5CFE2B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E5CFB6315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E5CFB62EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E5CFBCB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E5CFBCB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E5CFBC8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E5CFBBB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  000014E5CF4F6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014E5CEE5158E  Unknown               Unknown  Unknown
+libc.so.6          000014E5CEE51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: severe (71): integer divide by zero
+Image              PC                Routine            Line        Source             
+libc.so.6          00001540AE4681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001540AF5FA224  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001540AF408A94  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001540AF62D29B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001540AF62B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001540AF36315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001540AF362EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001540AF3CB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001540AF3CB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001540AF3C8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001540AF3BB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  00001540AECF6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          00001540AE45158E  Unknown               Unknown  Unknown
+libc.so.6          00001540AE451649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: severe (71): integer divide by zero
+Image              PC                Routine            Line        Source             
+libc.so.6          00001533DA6681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001533DB7FA224  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001533DB608A94  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001533DB82D29B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001533DB82B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001533DB56315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001533DB562EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001533DB5CB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001533DB5CB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001533DB5C8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001533DB5BB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  00001533DAEF6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          00001533DA65158E  Unknown               Unknown  Unknown
+libc.so.6          00001533DA651649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+libc.so.6          0000153992C681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000153993A0F276  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000153993C2E57B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000153993C2B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000015399396315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000153993962EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001539939CB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001539939CB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001539939C8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001539939BB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  00001539932F6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          0000153992C5158E  Unknown               Unknown  Unknown
+libc.so.6          0000153992C51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: severe (71): integer divide by zero
+Image              PC                Routine            Line        Source             
+libc.so.6          0000146984A681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001469859FA224  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000146985808A94  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000146985A2D29B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000146985A2B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014698576315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000146985762EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001469857CB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001469857CB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001469857C8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001469857BB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  00001469850F6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          0000146984A5158E  Unknown               Unknown  Unknown
+libc.so.6          0000146984A51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: severe (71): integer divide by zero
+Image              PC                Routine            Line        Source             
+libc.so.6          000014C54F6681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014C5505FA224  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014C550408A94  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014C55062D29B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014C55062B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014C55036315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014C550362EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014C5503CB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014C5503CB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014C5503C8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014C5503BB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  000014C54FCF6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014C54F65158E  Unknown               Unknown  Unknown
+libc.so.6          000014C54F651649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: severe (71): integer divide by zero
+Image              PC                Routine            Line        Source             
+libc.so.6          00001553E68681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001553E77FA224  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001553E7608A94  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001553E782D29B  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001553E782B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001553E756315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001553E7562EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001553E75CB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001553E75CB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001553E75C8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001553E75BB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  00001553E6EF6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          00001553E685158E  Unknown               Unknown  Unknown
+libc.so.6          00001553E6851649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+srun: error: nep15070103: tasks 1,3,5,7,9,11,13,15,17,19,23,25,27,29,31: Exited with exit code 71
+srun: Terminating StepId=4001877.0
+srun: error: nep15070103: tasks 33-46: Exited with exit code 174
+slurmstepd: error: *** STEP 4001877.0 ON nep15070103 CANCELLED AT 2026-08-17T11:10:08 ***
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000014BE828681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014BE835180A8  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014BE838A32F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014BE83606875  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014BE8360A2A4  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014BE8382D19E  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014BE8382B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014BE8356315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014BE83562EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014BE835CB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014BE835CB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014BE835C8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014BE835BB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  000014BE82EF6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014BE8285158E  Unknown               Unknown  Unknown
+libc.so.6          000014BE82851649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          0000152B96E681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000152B97B180B1  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000152B97EA32F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000152B97C06875  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000152B97C0A2A4  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000152B97E2D19E  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000152B97E2B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000152B97B6315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000152B97B62EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000152B97BCB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000152B97BCB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000152B97BC8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000152B97BBB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  0000152B974F6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          0000152B96E5158E  Unknown               Unknown  Unknown
+libc.so.6          0000152B96E51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000014E2D26681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E2D35180B1  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E2D38A32F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E2D3606875  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E2D360A2A4  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E2D382D19E  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E2D382B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E2D356315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E2D3562EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E2D35CB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E2D35CB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E2D35C8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E2D35BB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  000014E2D2EF6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014E2D265158E  Unknown               Unknown  Unknown
+libc.so.6          000014E2D2651649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000014A20DA681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A20E717CE7  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A20E7180A8  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A20EAA32F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A20E806875  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A20E80A2A4  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A20EA2D19E  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A20EA2B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A20E76315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A20E762EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A20E7CB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A20E7CB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A20E7C8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A20E7BB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  000014A20E0F6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014A20DA5158E  Unknown               Unknown  Unknown
+libc.so.6          000014A20DA51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000014E46EE681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E46FB17EC7  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E46FB180A8  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E46FEA32F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E46FC06875  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E46FC0A2A4  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E46FE2D19E  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E46FE2B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E46FB6315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E46FB62EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E46FBCB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E46FBCB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E46FBC8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014E46FBBB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  000014E46F4F6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014E46EE5158E  Unknown               Unknown  Unknown
+libc.so.6          000014E46EE51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000014A1C42681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A1C5117CE8  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A1C51180A8  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A1C54A32F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A1C5206875  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A1C520A2A4  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A1C542D19E  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A1C542B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A1C516315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A1C5162EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A1C51CB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A1C51CB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A1C51C8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A1C51BB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  000014A1C4AF6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014A1C425158E  Unknown               Unknown  Unknown
+libc.so.6          000014A1C4251649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000014DCCFA681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014DCD0717E58  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014DCD07180A8  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014DCD0AA32F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014DCD0806875  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014DCD080A2A4  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014DCD0A2D19E  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014DCD0A2B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014DCD076315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014DCD0762EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014DCD07CB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014DCD07CB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014DCD07C8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014DCD07BB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  000014DCD00F6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014DCCFA5158E  Unknown               Unknown  Unknown
+libc.so.6          000014DCCFA51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          0000151B5EE681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000151B5FB17EC4  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000151B5FB180A8  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000151B5FEA32F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000151B5FC06875  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000151B5FC0A2A4  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000151B5FE2D19E  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000151B5FE2B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000151B5FB6315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000151B5FB62EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000151B5FBCB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000151B5FBCB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000151B5FBC8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000151B5FBBB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  0000151B5F4F6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          0000151B5EE5158E  Unknown               Unknown  Unknown
+libc.so.6          0000151B5EE51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000014FE43C681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014FE44D515E2  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014FE449180B1  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014FE44CA32F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014FE44A06875  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014FE44A0A2A4  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014FE44C2D19E  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014FE44C2B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014FE4496315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014FE44962EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014FE449CB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014FE449CB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014FE449C8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014FE449BB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  000014FE442F6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014FE43C5158E  Unknown               Unknown  Unknown
+libc.so.6          000014FE43C51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          0000147B802681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000147B80F17CE5  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000147B80F180A8  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000147B812A32F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000147B81006875  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000147B8100A2A4  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000147B8122D19E  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000147B8122B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000147B80F6315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000147B80F62EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000147B80FCB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000147B80FCB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000147B80FC8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000147B80FBB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  0000147B808F6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          0000147B8025158E  Unknown               Unknown  Unknown
+libc.so.6          0000147B80251649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000015068F8681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001506907A9468  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000150690517D84  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001506905180A8  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001506908A32F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000150690606875  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000015069060A2A4  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000015069082D19E  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000015069082B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000015069056315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000150690562EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001506905CB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001506905CB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001506905C8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001506905BB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  000015068FEF6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000015068F85158E  Unknown               Unknown  Unknown
+libc.so.6          000015068F851649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000014D8504681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014D851317DFF  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014D8513180A8  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014D8516A32F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014D851406875  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014D85140A2A4  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014D85162D19E  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014D85162B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014D85136315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014D851362EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014D8513CB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014D8513CB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014D8513C8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014D8513BB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  000014D850CF6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014D85045158E  Unknown               Unknown  Unknown
+libc.so.6          000014D850451649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000014CE2EE681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014CE2FDA9484  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014CE2FB17D84  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014CE2FB180A8  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014CE2FEA32F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014CE2FC06875  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014CE2FC0A2A4  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014CE2FE2D19E  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014CE2FE2B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014CE2FB6315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014CE2FB62EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014CE2FBCB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014CE2FBCB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014CE2FBC8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014CE2FBBB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  000014CE2F4F6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014CE2EE5158E  Unknown               Unknown  Unknown
+libc.so.6          000014CE2EE51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          00001554048681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001554059A9426  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000155405717D84  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001554057180A8  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000155405AA32F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000155405806875  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000015540580A2A4  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000155405A2D19E  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000155405A2B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000015540576315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   0000155405762EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001554057CB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001554057CB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001554057C8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   00001554057BB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  00001554050F6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000015540485158E  Unknown               Unknown  Unknown
+libc.so.6          0000155404851649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000014823BC681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014823CDA9477  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014823CB17D84  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014823CB180A8  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014823CEA32F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014823CC06875  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014823CC0A2A4  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014823CE2D19E  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014823CE2B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014823CB6315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014823CB62EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014823CBCB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014823CBCB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014823CBC8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014823CBBB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  000014823C4F6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014823BC5158E  Unknown               Unknown  Unknown
+libc.so.6          000014823BC51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000014A066E681C0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A067FA9484  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A067D17D84  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A067D180A8  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A0680A32F0  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A067E06875  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A067E0A2A4  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A06802D19E  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A06802B9EE  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A067D6315A  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A067D62EAD  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A067DCB5D3  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A067DCB31F  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A067DC8B37  Unknown               Unknown  Unknown
+libmpi.so.12.0.0   000014A067DBB3F7  PMPI_Comm_dup         Unknown  Unknown
+libmpifort.so.12.  000014A0676F6FEB  pmpi_comm_dup_        Unknown  Unknown
+CCTM_v6.exe        00000000004D56C4  se_init_module_mp         166  se_init_module.F
+CCTM_v6.exe        0000000001296C73  cmaq_driver_              478  driver.F
+CCTM_v6.exe        00000000012963FB  MAIN__                     97  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014A066E5158E  Unknown               Unknown  Unknown
+libc.so.6          000014A066E51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+srun: error: nep15070103: tasks 0,2,4,6,10,12,14,16,18,20,22,24,26,28,30: Exited with exit code 1
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000014F884E681C0  Unknown               Unknown  Unknown
+libc.so.6          000014F884F23D3B  ftruncate             Unknown  Unknown
+CCTM_v6.exe        0000000001CB0D1C  Unknown               Unknown  Unknown
+CCTM_v6.exe        0000000001CD86E0  Unknown               Unknown  Unknown
+CCTM_v6.exe        0000000001CD660D  Unknown               Unknown  Unknown
+CCTM_v6.exe        0000000001BEC1C4  setup_logdev_             133  setup_logdev.F
+CCTM_v6.exe        0000000001135142  runtime_vars_mp_i         386  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014F884E5158E  Unknown               Unknown  Unknown
+libc.so.6          000014F884E51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+srun: error: nep15070103: task 32: Exited with exit code 1
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000014E4FC2681C0  Unknown               Unknown  Unknown
+libc.so.6          000014E4FC323D3B  ftruncate             Unknown  Unknown
+CCTM_v6.exe        0000000001CB0D1C  Unknown               Unknown  Unknown
+CCTM_v6.exe        0000000001CD86E0  Unknown               Unknown  Unknown
+CCTM_v6.exe        0000000001CD660D  Unknown               Unknown  Unknown
+CCTM_v6.exe        0000000001BEC1C4  setup_logdev_             133  setup_logdev.F
+CCTM_v6.exe        0000000001135142  runtime_vars_mp_i         386  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014E4FC25158E  Unknown               Unknown  Unknown
+libc.so.6          000014E4FC251649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+srun: error: nep15070103: task 21: Exited with exit code 1
+srun: error: nep15070103: task 47: Exited with exit code 174
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          00001480C4C681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  00001480C48CC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  00001480C4B1EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  00001480C481336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  00001480C48B0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  00001480CF787E3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  00001480CF790197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  00001480CF706786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  00001480CF706674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  00001480CF847412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          00001480C4C5158E  Unknown               Unknown  Unknown
+libc.so.6          00001480C4C51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000014A90DE681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  000014A90DACC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  000014A90DD1EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  000014A90DA1336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  000014A90DAB0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  000014A9188DCE3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  000014A9188E5197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  000014A91885B786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  000014A91885B674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  000014A91899C412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014A90DE5158E  Unknown               Unknown  Unknown
+libc.so.6          000014A90DE51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000015093DE681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  000015093DACC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  000015093DD1EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  000015093DA1336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  000015093DAB0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  000015094880DE3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  0000150948816197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  000015094878C786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  000015094878C674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  00001509488CD412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000015093DE5158E  Unknown               Unknown  Unknown
+libc.so.6          000015093DE51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          0000145E3E8681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  0000145E3E4CC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  0000145E3E71EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  0000145E3E41336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  0000145E3E4B0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  0000145E492C6E3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  0000145E492CF197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  0000145E49245786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  0000145E49245674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  0000145E49386412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          0000145E3E85158E  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000014F660A681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  000014F6606CC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  000014F66091EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  000014F66061336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  000014F6606B0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  000014F66B4DEE3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  000014F66B4E7197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  000014F66B45D786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  000014F66B45D674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  000014F66B59E412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014F660A5158E  Unknown               Unknown  Unknown
+libc.so.6          000014F660A51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000014F052E681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  000014F052ACC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  000014F052D1EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  000014F052A1336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  000014F052AB0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  000014F05D8BFE3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  000014F05D8C8197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  000014F05D83E786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  000014F05D83E674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  000014F05D97F412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014F052E5158E  Unknown               Unknown  Unknown
+libc.so.6          000014F052E51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          0000150C7F4681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  0000150C7F0CC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  0000150C7F31EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  0000150C7F01336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  0000150C7F0B0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  0000150C89F72E3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  0000150C89F7B197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  0000150C89EF1786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  0000150C89EF1674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  0000150C8A032412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          0000150C7F45158E  Unknown               Unknown  Unknown
+libc.so.6          0000150C7F451649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+libc.so.6          0000145E3E851649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000014B8C38681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  000014B8C34CC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  000014B8C371EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  000014B8C341336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  000014B8C34B0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  000014B8CE2F3E3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  000014B8CE2FC197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  000014B8CE272786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  000014B8CE272674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  000014B8CE3B3412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014B8C385158E  Unknown               Unknown  Unknown
+libc.so.6          000014B8C3851649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          0000151514A681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  00001515146CC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  000015151491EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  000015151461336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  00001515146B0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  000015151F4C9E3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  000015151F4D2197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  000015151F448786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  000015151F448674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  000015151F589412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          0000151514A5158E  Unknown               Unknown  Unknown
+libc.so.6          0000151514A51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000014D383A681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  000014D3836CC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  000014D38391EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  000014D38361336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  000014D3836B0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  000014D38E431E3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  000014D38E43A197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  000014D38E3B0786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  000014D38E3B0674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  000014D38E4F1412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014D383A5158E  Unknown               Unknown  Unknown
+libc.so.6          000014D383A51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000014A3228681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  000014A3224CC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  000014A32271EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  000014A32241336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  000014A3224B0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  000014A32D24AE3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  000014A32D253197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  000014A32D1C9786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  000014A32D1C9674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  000014A32D30A412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014A32285158E  Unknown               Unknown  Unknown
+libc.so.6          000014A322851649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000014F3A66681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  000014F3A62CC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  000014F3A651EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  000014F3A621336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  000014F3A62B0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  000014F3B1143E3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  000014F3B114C197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  000014F3B10C2786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  000014F3B10C2674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  000014F3B1203412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014F3A665158E  Unknown               Unknown  Unknown
+libc.so.6          000014F3A6651649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          00001464E60681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  00001464E5CCC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  00001464E5F1EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  00001464E5C1336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  00001464E5CB0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  00001464F0B33E3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  00001464F0B3C197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  00001464F0AB2786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  00001464F0AB2674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  00001464F0BF3412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          00001464E605158E  Unknown               Unknown  Unknown
+libc.so.6          00001464E6051649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000014E894A681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  000014E8946CC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  000014E89491EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  000014E89461336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  000014E8946B0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  000014E89F597E3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  000014E89F5A0197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  000014E89F516786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  000014E89F516674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  000014E89F657412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014E894A5158E  Unknown               Unknown  Unknown
+libc.so.6          000014E894A51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          0000153695C681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  00001536958CC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  0000153695B1EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  000015369581336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  00001536958B0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  00001536A070DE3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  00001536A0716197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  00001536A068C786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  00001536A068C674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  00001536A07CD412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          0000153695C5158E  Unknown               Unknown  Unknown
+libc.so.6          0000153695C51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000014E368E681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  000014E368ACC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  000014E368D1EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  000014E368A1336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  000014E368AB0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  000014E373979E3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  000014E373982197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  000014E3738F8786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  000014E3738F8674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  000014E373A39412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014E368E5158E  Unknown               Unknown  Unknown
+libc.so.6          000014E368E51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000014D2FD0681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  000014D2FCCCC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  000014D2FCF1EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  000014D2FCC1336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  000014D2FCCB0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  000014D307B6FE3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  000014D307B78197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  000014D307AEE786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  000014D307AEE674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  000014D307C2F412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014D2FD05158E  Unknown               Unknown  Unknown
+libc.so.6          000014D2FD051649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          0000148D170681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  0000148D16CCC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  0000148D16F1EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  0000148D16C1336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  0000148D16CB0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  0000148D21A2DE3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  0000148D21A36197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  0000148D219AC786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  0000148D219AC674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  0000148D21AED412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          0000148D1705158E  Unknown               Unknown  Unknown
+libc.so.6          0000148D17051649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000014BAE12681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  000014BAE0ECC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  000014BAE111EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  000014BAE0E1336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  000014BAE0EB0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  000014BAEBC2CE3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  000014BAEBC35197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  000014BAEBBAB786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  000014BAEBBAB674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  000014BAEBCEC412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014BAE125158E  Unknown               Unknown  Unknown
+libc.so.6          000014BAE1251649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          00001464A98681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  00001464A94CC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  00001464A971EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  00001464A941336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  00001464A94B0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  00001464B434DE3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  00001464B4356197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  00001464B42CC786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  00001464B42CC674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  00001464B440D412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          00001464A985158E  Unknown               Unknown  Unknown
+libc.so.6          00001464A9851649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          00001552922681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  0000155291ECC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  000015529211EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  0000155291E1336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  0000155291EB0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  000015529CCDBE3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  000015529CCE4197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  000015529CC5A786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  000015529CC5A674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  000015529CD9B412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000015529225158E  Unknown               Unknown  Unknown
+libc.so.6          0000155292251649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          00001468702681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  000014686FECC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  000014687011EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  000014686FE1336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  000014686FEB0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  000014687ABEDE3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  000014687ABF6197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  000014687AB6C786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  000014687AB6C674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  000014687ACAD412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014687025158E  Unknown               Unknown  Unknown
+libc.so.6          0000146870251649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          00001510878681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  00001510874CC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  000015108771EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  000015108741336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  00001510874B0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  000015109227CE3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  0000151092285197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  00001510921FB786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  00001510921FB674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  000015109233C412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000015108785158E  Unknown               Unknown  Unknown
+libc.so.6          0000151087851649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000015546EA681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  000015546E6CC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  000015546E91EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  000015546E61336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  000015546E6B0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  0000155479552E3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  000015547955B197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  00001554794D1786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  00001554794D1674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  0000155479612412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000015546EA5158E  Unknown               Unknown  Unknown
+libc.so.6          000015546EA51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          00001485244681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  00001485240CC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  000014852431EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  000014852401336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  00001485240B0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  000014852EF07E3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  000014852EF10197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  000014852EE86786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  000014852EE86674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  000014852EFC7412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014852445158E  Unknown               Unknown  Unknown
+libc.so.6          0000148524451649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000014D5F2A681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  000014D5F26CC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  000014D5F291EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  000014D5F261336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  000014D5F26B0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  000014D5FD3D8E3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  000014D5FD3E1197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  000014D5FD357786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  000014D5FD357674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  000014D5FD498412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014D5F2A5158E  Unknown               Unknown  Unknown
+libc.so.6          000014D5F2A51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000015156B8681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  000015156B4CC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  000015156B71EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  000015156B41336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  000015156B4B0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  0000151576218E3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  0000151576221197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  0000151576197786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  0000151576197674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  00001515762D8412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000015156B85158E  Unknown               Unknown  Unknown
+libc.so.6          000015156B851649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          0000149CF2E681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  0000149CF2ACC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  0000149CF2D1EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  0000149CF2A1336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  0000149CF2AB0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  0000149CFD9AAE3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  0000149CFD9B3197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  0000149CFD929786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  0000149CFD929674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  0000149CFDA6A412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          0000149CF2E5158E  Unknown               Unknown  Unknown
+libc.so.6          0000149CF2E51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          00001548350681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  0000154834CCC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  0000154834F1EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  0000154834C1336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  0000154834CB0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  000015483FB35E3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  000015483FB3E197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  000015483FAB4786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  000015483FAB4674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  000015483FBF5412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000015483505158E  Unknown               Unknown  Unknown
+libc.so.6          0000154835051649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          0000148C9E2681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  0000148C9DECC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  0000148C9E11EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  0000148C9DE1336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  0000148C9DEB0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  0000148CA8DA2E3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  0000148CA8DAB197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  0000148CA8D21786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  0000148CA8D21674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  0000148CA8E62412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          0000148C9E25158E  Unknown               Unknown  Unknown
+libc.so.6          0000148C9E251649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          00001541674681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  00001541670CC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  000015416731EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  000015416701336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  00001541670B0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  0000154171E04E3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  0000154171E0D197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  0000154171D83786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  0000154171D83674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  0000154171EC4412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000015416745158E  Unknown               Unknown  Unknown
+libc.so.6          0000154167451649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000014F64C8681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  000014F64C4CC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  000014F64C71EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  000014F64C41336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  000014F64C4B0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  000014F6572EAE3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  000014F6572F3197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  000014F657269786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  000014F657269674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  000014F6573AA412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014F64C85158E  Unknown               Unknown  Unknown
+libc.so.6          000014F64C851649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          00001503246681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  00001503242CC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  000015032451EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  000015032421336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  00001503242B0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  000015032F0DAE3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  000015032F0E3197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  000015032F059786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  000015032F059674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  000015032F19A412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000015032465158E  Unknown               Unknown  Unknown
+libc.so.6          0000150324651649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          0000147CE0A681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  0000147CE06CC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  0000147CE091EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  0000147CE061336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  0000147CE06B0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  0000147CEB59FE3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  0000147CEB5A8197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  0000147CEB51E786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  0000147CEB51E674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  0000147CEB65F412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          0000147CE0A5158E  Unknown               Unknown  Unknown
+libc.so.6          0000147CE0A51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000014BB244681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  000014BB240A7470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  000014BB242F9A40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  000014BB23FEE36B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  000014BB2408BEFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  000014BB2EDB9E3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  000014BB2EDC2197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  000014BB2ED38786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  000014BB2ED38674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  000014BB2EE79412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014BB2445158E  Unknown               Unknown  Unknown
+libc.so.6          000014BB24451649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          00001528B98681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  00001528B94CC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  00001528B971EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  00001528B941336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  00001528B94B0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  00001528C435EE3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  00001528C4367197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  00001528C42DD786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  00001528C42DD674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  00001528C441E412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          00001528B985158E  Unknown               Unknown  Unknown
+libc.so.6          00001528B9851649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          00001549256681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  00001549252CC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  000015492551EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  000015492521336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  00001549252B0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  0000154930014E3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  000015493001D197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  000015492FF93786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  000015492FF93674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  00001549300D4412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000015492565158E  Unknown               Unknown  Unknown
+libc.so.6          0000154925651649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000014C84BA681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  000014C84B6CC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  000014C84B91EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  000014C84B61336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  000014C84B6B0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  000014C856487E3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  000014C856490197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  000014C856406786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  000014C856406674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  000014C856547412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014C84BA5158E  Unknown               Unknown  Unknown
+libc.so.6          000014C84BA51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000014E7A08681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  000014E7A04CC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  000014E7A071EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  000014E7A041336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  000014E7A04B0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  000014E7AB217E3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  000014E7AB220197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  000014E7AB196786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  000014E7AB196674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  000014E7AB2D7412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014E7A085158E  Unknown               Unknown  Unknown
+libc.so.6          000014E7A0851649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000015380AA681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  000015380A6A7470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  000015380A8F9A40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  000015380A5EE36B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  000015380A68BEFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  00001538153BAE3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  00001538153C3197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  0000153815339786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  0000153815339674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  000015381547A412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000015380AA5158E  Unknown               Unknown  Unknown
+libc.so.6          000015380AA51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          0000148A6BC681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  0000148A6B8CC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  0000148A6BB1EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  0000148A6B81336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  0000148A6B8B0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  0000148A766F7E3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  0000148A76700197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  0000148A76676786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  0000148A76676674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  0000148A767B7412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          0000148A6BC5158E  Unknown               Unknown  Unknown
+libc.so.6          0000148A6BC51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000014C9358681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  000014C9354CC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  000014C93571EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  000014C93541336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  000014C9354B0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  000014C9402BAE3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  000014C9402C3197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  000014C940239786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  000014C940239674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  000014C94037A412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014C93585158E  Unknown               Unknown  Unknown
+libc.so.6          000014C935851649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000014F45E6681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  000014F45E2CC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  000014F45E51EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  000014F45E21336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  000014F45E2B0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  000014F469014E3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  000014F46901D197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  000014F468F93786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  000014F468F93674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  000014F4690D4412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014F45E65158E  Unknown               Unknown  Unknown
+libc.so.6          000014F45E651649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          000014C2136681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  000014C2132CC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  000014C21351EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  000014C21321336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  000014C2132B0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  000014C21E14DE3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  000014C21E156197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  000014C21E0CC786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  000014C21E0CC674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  000014C21E20D412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000014C21365158E  Unknown               Unknown  Unknown
+libc.so.6          000014C213651649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          00001509E7C681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  00001509E78CC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  00001509E7B1EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  00001509E781336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  00001509E78B0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  00001509F25DEE3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  00001509F25E7197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  00001509F255D786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  00001509F255D674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  00001509F269E412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          00001509E7C5158E  Unknown               Unknown  Unknown
+libc.so.6          00001509E7C51649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          0000154EFC2681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  0000154EFBECC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  0000154EFC11EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  0000154EFBE1336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  0000154EFBEB0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  0000154F06CDCE3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  0000154F06CE5197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  0000154F06C5B786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  0000154F06C5B674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  0000154F06D9C412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          0000154EFC25158E  Unknown               Unknown  Unknown
+libc.so.6          0000154EFC251649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          0000154E818681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  0000154E814CC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  0000154E8171EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  0000154E8141336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  0000154E814B0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  0000154E8C34CE3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  0000154E8C355197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  0000154E8C2CB786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  0000154E8C2CB674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  0000154E8C40C412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          0000154E8185158E  Unknown               Unknown  Unknown
+libc.so.6          0000154E81851649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libc.so.6          00001520892681C0  Unknown               Unknown  Unknown
+libhdf5.so.310.3.  0000152088ECC470  H5F_init              Unknown  Unknown
+libhdf5.so.310.3.  000015208911EA40  H5VL_init_phase2      Unknown  Unknown
+libhdf5.so.310.3.  0000152088E1336B  H5_init_library       Unknown  Unknown
+libhdf5.so.310.3.  0000152088EB0EFC  H5Eset_auto2          Unknown  Unknown
+libnetcdf.so.19.0  0000152093CBDE3C  nc4_hdf5_initiali     Unknown  Unknown
+libnetcdf.so.19.0  0000152093CC6197  NC_HDF5_initializ     Unknown  Unknown
+libnetcdf.so.19.0  0000152093C3C786  NC_open               Unknown  Unknown
+libnetcdf.so.19.0  0000152093C3C674  nc_open               Unknown  Unknown
+libnetcdff.so.7.0  0000152093D7D412  nf_open_              Unknown  Unknown
+CCTM_v6.exe        0000000001C0C1F4  opnfil3_                  136  opnfil3.F90
+CCTM_v6.exe        0000000001C0B919  open3_                    378  open3.F90
+CCTM_v6.exe        00000000011396AE  runtime_vars_mp_i        1040  RUNTIME_VARS.F
+CCTM_v6.exe        0000000001296133  MAIN__                     77  cmaq_main.F
+CCTM_v6.exe        000000000041503D  Unknown               Unknown  Unknown
+libc.so.6          000015208925158E  Unknown               Unknown  Unknown
+libc.so.6          0000152089251649  __libc_start_main     Unknown  Unknown
+CCTM_v6.exe        0000000000414F55  Unknown               Unknown  Unknown
+srun: error: nep15070103: task 8: Exited with exit code 1
+srun: error: nep15070107: tasks 48-95: Exited with exit code 1
+
+**************************************************************
+** Runscript Detected an Error: CGRID file was not written. **
+**   This indicates that CMAQ was interrupted or an issue   **
+**   exists with writing output. The runscript will now     **
+**   abort rather than proceeding to subsequent days.       **
+**************************************************************
+
+==================================
+  ***** CMAQ TIMING REPORT *****
+==================================
+Start Day: 2022-07-01
+End Day:   2022-07-02
+Number of Simulation Days: 1
+Domain Name:               SE60BENCH
+Number of Grid Cells:      280000  (ROW x COL x LAY)
+Number of Layers:          35
+Number of Processes:       96
+   All times are in seconds.
+
+Num  Day        Wall Time
+01   2022-07-01   6
+     Total Time = 6.00
+      Avg. Time = 6.00

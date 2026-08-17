@@ -1,0 +1,51 @@
+Start Model Run At  Mon Aug 17 11:34:56 AM EDT 2026
+Compiler is set to intel
+0: Event not found.
+
+Working Directory is /proj/ie/proj/CMAS/CMASOps2026/CMAQ_CMAS_6/intelmpi_intel_ifort_2024/CCTM/scripts
+Build Directory is /proj/ie/proj/CMAS/CMASOps2026/CMAQ_CMAS_6/intelmpi_intel_ifort_2024/CCTM/scripts/BLD_CCTM_v6_intel_debug
+Output Directory is /work/users/l/i/lizadams/CMAQv6.0_2022_12SE1_Benchmark_2day//output_CCTM_v6_intel_Bench_2022_12SE1_debug
+Log Directory is /work/users/l/i/lizadams/CMAQv6.0_2022_12SE1_Benchmark_2day//output_CCTM_v6_intel_Bench_2022_12SE1_debug/LOGS
+Executable Name is CCTM_v6.exe
+
+---CMAQ EXECUTION ID: CMAQ_CCTMv6_lizadams_20260817_153459_749269264 ---
+
+Set up input and output files for Day 2022-07-01.
+
+Existing Logs and Output Files for Day 2022-07-01 Will Be Deleted
+rm: No match.
+
+CMAQ Processing of Day 20220701 Began at Mon Aug 17 11:35:14 AM EDT 2026
+
+srun: error: Couldn't find the specified plugin name for mpi/pmi looking at all files
+srun: error: cannot find mpi plugin for mpi/pmi
+srun: error: MPI: Cannot create context for mpi/pmi
+srun: error: MPI: Unable to load any plugin
+srun: error: Invalid MPI type 'pmi', --mpi=list for acceptable types
+
+**************************************************************
+** Runscript Detected an Error: CGRID file was not written. **
+**   This indicates that CMAQ was interrupted or an issue   **
+**   exists with writing output. The runscript will now     **
+**   abort rather than proceeding to subsequent days.       **
+**************************************************************
+(standard_in) 2: syntax error
+(standard_in) 1: syntax error
+(standard_in) 1: syntax error
+
+==================================
+  ***** CMAQ TIMING REPORT *****
+==================================
+Start Day: 2022-07-01
+End Day:   2022-07-02
+Number of Simulation Days: 1
+Domain Name:               SE60BENCH
+Number of Grid Cells:      280000  (ROW x COL x LAY)
+Number of Layers:          35
+Number of Processes:       96
+   All times are in seconds.
+
+Num  Day        Wall Time
+01   2022-07-01   
+     Total Time = 
+      Avg. Time = 

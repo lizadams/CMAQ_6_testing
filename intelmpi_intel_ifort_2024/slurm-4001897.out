@@ -1,0 +1,312 @@
+Start Model Run At  Mon Aug 17 11:33:06 AM EDT 2026
+Compiler is set to intel
+0: Event not found.
+
+Working Directory is /proj/ie/proj/CMAS/CMASOps2026/CMAQ_CMAS_6/intelmpi_intel_ifort_2024/CCTM/scripts
+Build Directory is /proj/ie/proj/CMAS/CMASOps2026/CMAQ_CMAS_6/intelmpi_intel_ifort_2024/CCTM/scripts/BLD_CCTM_v6_intel_debug
+Output Directory is /work/users/l/i/lizadams/CMAQv6.0_2022_12SE1_Benchmark_2day//output_CCTM_v6_intel_Bench_2022_12SE1_debug
+Log Directory is /work/users/l/i/lizadams/CMAQv6.0_2022_12SE1_Benchmark_2day//output_CCTM_v6_intel_Bench_2022_12SE1_debug/LOGS
+Executable Name is CCTM_v6.exe
+
+---CMAQ EXECUTION ID: CMAQ_CCTMv6_lizadams_20260817_153306_665104062 ---
+
+Set up input and output files for Day 2022-07-01.
+
+Existing Logs and Output Files for Day 2022-07-01 Will Be Deleted
+rm: No match.
+
+CMAQ Processing of Day 20220701 Began at Mon Aug 17 11:33:07 AM EDT 2026
+
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+slurmstepd: error: *** STEP 4001897.0 ON nep15080401 CANCELLED AT 2026-08-17T11:33:08 ***
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+srun: error: nep15080401: tasks 0,2,4,6-7,11-23,26-27,31,34-38,42-43,46-57,60,64-65,72-74,76,78-80,90-92,94-95: Killed
+srun: Terminating StepId=4001897.0
+srun: error: nep15080401: tasks 1,3,5,8-10,24-25,28-30,32-33,39-41,44-45,58-59,61-63,66-71,75,77,81-89,93: Exited with exit code 1
+
+**************************************************************
+** Runscript Detected an Error: CGRID file was not written. **
+**   This indicates that CMAQ was interrupted or an issue   **
+**   exists with writing output. The runscript will now     **
+**   abort rather than proceeding to subsequent days.       **
+**************************************************************
+
+==================================
+  ***** CMAQ TIMING REPORT *****
+==================================
+Start Day: 2022-07-01
+End Day:   2022-07-02
+Number of Simulation Days: 1
+Domain Name:               SE60BENCH
+Number of Grid Cells:      280000  (ROW x COL x LAY)
+Number of Layers:          35
+Number of Processes:       96
+   All times are in seconds.
+
+Num  Day        Wall Time
+01   2022-07-01   15080401
+     Total Time = 15080401.00
+      Avg. Time = 15080401.00
