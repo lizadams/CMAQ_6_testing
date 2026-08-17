@@ -1,0 +1,16 @@
+module: Command not found.
+[0] MPI startup(): Intel(R) MPI Library, Version 2021.13  Build 20240701 (id: 179630a)
+[0] MPI startup(): Copyright (C) 2003-2024 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): failed to load libfabric.so.1: libfabric.so.1: cannot open shared object file: No such file or directory
+[1] MPI startup(): failed to load libfabric.so.1: libfabric.so.1: cannot open shared object file: No such file or directory
+Abort(1090447) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1586): 
+(unknown)(): Unknown error class
+Abort(1090447) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1586): 
+(unknown)(): Unknown error class

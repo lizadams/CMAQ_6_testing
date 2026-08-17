@@ -1,0 +1,40 @@
+module: Command not found.
+module: Command not found.
+[0] MPI startup(): Intel(R) MPI Library, Version 2021.13  Build 20240701 (id: 179630a)
+[0] MPI startup(): Copyright (C) 2003-2024 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): shm segment size (1068 MB per rank) * (2 local ranks) = 2136 MB total
+[0] MPI startup(): max number of MPI_Request per vci: 67108864 (pools: 1)
+[0] MPI startup(): Load tuning file: "/nas/sycamore/apps/intel/2024.2.1/mpi/latest/opt/mpi/etc/tuning_generic_shm.dat"
+[0] MPI startup(): threading: mode: direct
+[0] MPI startup(): threading: vcis: 1
+[0] MPI startup(): threading: app_threads: -1
+[0] MPI startup(): threading: runtime: generic
+[0] MPI startup(): threading: progress_threads: 0
+[0] MPI startup(): threading: async_progress: 0
+[0] MPI startup(): threading: lock_level: global
+[0] MPI startup(): tag bits available: 30 (TAG_UB value: 1073741823) 
+[0] MPI startup(): source bits available: 0 (Maximal number of rank: 0) 
+[0] MPI startup(): ===== CPU pinning =====
+[0] MPI startup(): Rank    Pid      Node name    Pin cpu
+[0] MPI startup(): 0       598980   nep15090406  {38,39,40,41,86,87,88,89,90,91,92,93,94,95,130,131,132,133,134,135,136,137,138,13
+                                   9,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,15
+                                   9,160,161,162,163}
+[0] MPI startup(): 1       598981   nep15090406  {38,39,40,41,86,87,88,89,90,91,92,93,94,95,130,131,132,133,134,135,136,137,138,13
+                                   9,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,15
+                                   9,160,161,162,163}
+[0] MPI startup(): I_MPI_OFI_LIBRARY_INTERNAL=1
+[0] MPI startup(): I_MPI_ROOT=/nas/sycamore/apps/intel/2024.2.1/mpi/latest
+[0] MPI startup(): ONEAPI_ROOT=/nas/sycamore/apps/intel/2024.2.1
+[0] MPI startup(): I_MPI_MPIRUN=mpirun
+[0] MPI startup(): I_MPI_BIND_WIN_ALLOCATE=localalloc
+[0] MPI startup(): I_MPI_HYDRA_BOOTSTRAP_EXEC_EXTRA_ARGS=--external-launcher
+[0] MPI startup(): I_MPI_HYDRA_TOPOLIB=hwloc
+[0] MPI startup(): I_MPI_HYDRA_BOOTSTRAP=slurm
+[0] MPI startup(): I_MPI_RETURN_WIN_MEM_NUMA=0
+[0] MPI startup(): I_MPI_PIN_DOMAIN=48
+[0] MPI startup(): I_MPI_INTERNAL_MEM_POLICY=default
+[0] MPI startup(): I_MPI_FABRICS=shm
+[0] MPI startup(): I_MPI_DEBUG=10
+ Hello World from process:            0 of            2
+ Hello World from process:            1 of            2

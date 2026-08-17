@@ -1,0 +1,14 @@
+module: Command not found.
+module: Command not found.
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
+Abort(2139023) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Unknown error class, error stack:
+MPIR_Init_thread(192)........: 
+MPID_Init(1665)..............: 
+MPIDI_OFI_mpi_init_hook(1625): 
+open_fabric(2726)............: 
+find_provider(2904)..........: OFI fi_getinfo() failed (ofi_init.c:2904:find_provider:No data available)
