@@ -1,29 +1,13 @@
 #!/bin/csh -f
-#SBATCH -J CMAQ_6.0
-#SBATCH --mail-user=lizadams@email.unc.edu
-#SBATCH --mail-type=all         # Send email at begin and end of job
-## Hard Requirement for Epyc 9684x Processor
 #SBATCH -C 9684x
 #SBATCH -C ndr
-##SBATCH --hint=nomultithread
-#SBATCH --nodes=2
-#SBATCH --ntasks-per-node=24
-#SBATCH --mem-per-cpu=2G
-#SBATCH -t 04:00:00
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=64
+#SBATCH --time=00:30:00
 
-# 1. Force Slurm to pass your exact compiler environment variables
-#SBATCH --export=ALL
-
-# 2. Prevent memory crashes from massive atmospheric grids 
-ulimit -s unlimited
-
-setenv UCX_TLS ^ud
-setenv I_MPI_SHM off
-
-# 4. Fix Intel MPI network layer for compute node internal communication
-setenv I_MPI_FABRICS shm
-setenv I_MPI_SHM 0
-setenv FI_PROVIDER tcp
+#setenv UCX_TLS ^ud
+#setenv I_MPI_OFI_LIBRARY_INTERNAL 1
+source /proj/ie/proj/CMAS/CMASOps2026/env_intelonepi_202421.csh
 
 
 # ============== CCTMv5.5.X STAGE EM CRACMM 12US1 Run Script ================
@@ -62,7 +46,7 @@ echo 'Start Model Run At ' `date`
  set VRSN      = v6                #> Code Version
  set PROC      = mpi               #> serial or mpi
  setenv MECH     cracmm3           #> Mechanism ID
- set APPL      = Bench_2022_12SE1_debug  #> Application Name (e.g. Gridname)
+ set APPL      = Bench_2022_12SE1_1node_64pe  #> Application Name (e.g. Gridname)
 
 #> Define RUNID as any combination of parameters above or others. By default,
 #> this information will be collected into this one string, $RUNID, for easy
@@ -71,7 +55,7 @@ echo 'Start Model Run At ' `date`
 
 #> Set the build directory (this is where the CMAQ executable
 #> is located by default).
- set BLD       = ${CMAQ_HOME}/CCTM/scripts/BLD_CCTM_${VRSN}_${compilerString}_debug
+ set BLD       = ${CMAQ_HOME}/CCTM/scripts/BLD_CCTM_${VRSN}_${compilerString}
  set EXEC      = CCTM_${VRSN}.exe  
 
 #> Output Each line of Runscript to Log File
@@ -112,7 +96,7 @@ set TSTEP      = 010000            #> output time step interval (HHMMSS)
 if ( $PROC == serial ) then
    setenv NPCOL_NPROW "1 1"; set NPROCS   = 1 # single processor setting
 else
-   @ NPCOL  =  8; @ NPROW = 4 
+   @ NPCOL  =  8; @ NPROW = 8 
    @ NPROCS = $NPCOL * $NPROW
    setenv NPCOL_NPROW "$NPCOL $NPROW"; 
 endif
@@ -766,13 +750,12 @@ while ($TODAYJ <= $STOP_DAY )  #>Compare dates in terms of YYYYJJJ
   echo 
 
   #> Executable call for single PE, uncomment to invoke
-  #( time $BLD/$EXEC ) |& tee buff_${EXECUTION_ID}.txt
+  #( time -p $BLD/$EXEC ) |& tee buff_${EXECUTION_ID}.txt
 
   #> Executable call for multi PE, configure for your system 
   # set MPI = /usr/local/intel/impi/3.2.2.006/bin64
   # set MPIRUN = $MPI/mpirun
-  #( time mpirun -np $NPROCS $BLD/$EXEC ) |& tee buff_${EXECUTION_ID}.txt
-  ( srun --mpi=pmix -n $NPROCS $BLD/$EXEC ) |& tee buff_${EXECUTION_ID}.txt
+  ( mpirun -np $NPROCS $BLD/$EXEC ) |& tee buff_${EXECUTION_ID}.txt
 
   #> Harvest Timing Output so that it may be reported below
   set rtarray = "${rtarray} `tail -3 buff_${EXECUTION_ID}.txt | grep -Eo '[+-]?[0-9]+([.][0-9]+)?' | head -1` "
