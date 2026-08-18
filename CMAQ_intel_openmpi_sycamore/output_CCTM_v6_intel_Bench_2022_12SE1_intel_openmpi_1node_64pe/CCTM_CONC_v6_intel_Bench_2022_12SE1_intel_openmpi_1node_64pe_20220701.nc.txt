@@ -1,0 +1,2025 @@
+
+
+     File:  FOO             
+     Date and time:  2022182:000000  (0:00:00   July 1, 2022  )
+
+     Variable:  O3              
+          3-D grid statistics
+         Max    6.83803E-02 @(c,r,l)=(25,47,1)
+         Min    1.60911E-02 @(c,r,l)=(31,39,1)
+         Mean   3.57806E-02
+         Sigma  7.98729E-03
+
+     Variable:  NO              
+          3-D grid statistics
+         Max    5.06945E-03 @(c,r,l)=(31,39,1)
+         Min    1.15249E-10 @(c,r,l)=(100,61,1)
+         Mean   3.83054E-05
+         Sigma  7.94853E-05
+
+     Variable:  NO2             
+          3-D grid statistics
+         Max    2.74510E-02 @(c,r,l)=(31,39,1)
+         Min    1.14601E-05 @(c,r,l)=(22,1,1)
+         Mean   7.23100E-04
+         Sigma  8.67772E-04
+
+     Variable:  ANO3I           
+          3-D grid statistics
+         Max    6.42510E-01 @(c,r,l)=(7,32,1)
+         Min    7.04300E-07 @(c,r,l)=(25,10,1)
+         Mean   8.02773E-03
+         Sigma  1.96450E-02
+
+     Variable:  ANO3J           
+          3-D grid statistics
+         Max    1.10519E+00 @(c,r,l)=(7,32,1)
+         Min    3.06678E-06 @(c,r,l)=(25,10,1)
+         Mean   8.89801E-02
+         Sigma  1.50950E-01
+
+     Variable:  ANH4I           
+          3-D grid statistics
+         Max    1.46114E-01 @(c,r,l)=(7,32,1)
+         Min    1.53070E-14 @(c,r,l)=(62,16,1)
+         Mean   1.64943E-02
+         Sigma  1.81985E-02
+
+     Variable:  ANH4J           
+          3-D grid statistics
+         Max    2.60476E-01 @(c,r,l)=(7,32,1)
+         Min    1.16070E-13 @(c,r,l)=(64,15,1)
+         Mean   3.65289E-02
+         Sigma  3.82269E-02
+
+     Variable:  ASO4I           
+          3-D grid statistics
+         Max    2.35680E-01 @(c,r,l)=(1,79,1)
+         Min    6.05927E-04 @(c,r,l)=(60,2,1)
+         Mean   2.10924E-02
+         Sigma  1.82513E-02
+
+     Variable:  ASO4J           
+          3-D grid statistics
+         Max    1.11718E+00 @(c,r,l)=(1,79,1)
+         Min    1.31250E-03 @(c,r,l)=(25,10,1)
+         Mean   3.44910E-01
+         Sigma  1.72797E-01
+
+     Variable:  NH3             
+          3-D grid statistics
+         Max    5.33447E-02 @(c,r,l)=(74,60,1)
+         Min    1.34019E-06 @(c,r,l)=(64,14,1)
+         Mean   1.89033E-03
+         Sigma  2.94016E-03
+
+     Variable:  W_VEL           
+          3-D grid statistics
+         Max   -9.99900E+36 @(c,r,l)=(1,1,1)
+         Min   -9.99900E+36 @(c,r,l)=(1,1,1)
+         Mean  -9.99900E+36
+         Sigma     Infinity
+
+
+     File:  FOO             
+     Date and time:  2022182:010000  (1:00:00   July 1, 2022  )
+
+     Variable:  O3              
+          3-D grid statistics
+         Max    5.98692E-02 @(c,r,l)=(25,48,1)
+         Min    2.16732E-03 @(c,r,l)=(31,39,1)
+         Mean   3.19576E-02
+         Sigma  7.29700E-03
+
+     Variable:  NO              
+          3-D grid statistics
+         Max    1.07475E-02 @(c,r,l)=(31,39,1)
+         Min    6.10781E-12 @(c,r,l)=(22,2,1)
+         Mean   7.09544E-06
+         Sigma  1.21103E-04
+
+     Variable:  NO2             
+          3-D grid statistics
+         Max    3.98011E-02 @(c,r,l)=(31,39,1)
+         Min    1.17852E-05 @(c,r,l)=(22,1,1)
+         Mean   1.09238E-03
+         Sigma  1.35440E-03
+
+     Variable:  ANO3I           
+          3-D grid statistics
+         Max    7.63277E-01 @(c,r,l)=(7,32,1)
+         Min    1.19605E-06 @(c,r,l)=(29,56,1)
+         Mean   9.94854E-03
+         Sigma  2.60694E-02
+
+     Variable:  ANO3J           
+          3-D grid statistics
+         Max    1.38082E+00 @(c,r,l)=(7,32,1)
+         Min    3.20141E-06 @(c,r,l)=(45,23,1)
+         Mean   9.87123E-02
+         Sigma  1.59571E-01
+
+     Variable:  ANH4I           
+          3-D grid statistics
+         Max    1.44521E-01 @(c,r,l)=(7,31,1)
+         Min    8.37261E-15 @(c,r,l)=(70,18,1)
+         Mean   1.45166E-02
+         Sigma  1.73349E-02
+
+     Variable:  ANH4J           
+          3-D grid statistics
+         Max    2.83143E-01 @(c,r,l)=(6,32,1)
+         Min    1.37298E-13 @(c,r,l)=(62,15,1)
+         Mean   3.28705E-02
+         Sigma  3.70762E-02
+
+     Variable:  ASO4I           
+          3-D grid statistics
+         Max    2.42704E-01 @(c,r,l)=(1,80,1)
+         Min    7.47790E-04 @(c,r,l)=(59,3,1)
+         Mean   2.14786E-02
+         Sigma  1.86595E-02
+
+     Variable:  ASO4J           
+          3-D grid statistics
+         Max    1.15089E+00 @(c,r,l)=(1,80,1)
+         Min    1.82391E-03 @(c,r,l)=(45,24,1)
+         Mean   3.46105E-01
+         Sigma  1.75548E-01
+
+     Variable:  NH3             
+          3-D grid statistics
+         Max    4.45693E-02 @(c,r,l)=(74,60,1)
+         Min    1.61911E-06 @(c,r,l)=(70,18,1)
+         Mean   1.58315E-03
+         Sigma  2.53264E-03
+
+     Variable:  W_VEL           
+          3-D grid statistics
+         Max    2.48490E-02 @(c,r,l)=(76,16,1)
+         Min   -2.86174E-02 @(c,r,l)=(20,64,1)
+         Mean  -3.71046E-05
+         Sigma  2.15648E-03
+
+
+     File:  FOO             
+     Date and time:  2022182:020000  (2:00:00   July 1, 2022  )
+
+     Variable:  O3              
+          3-D grid statistics
+         Max    5.59617E-02 @(c,r,l)=(25,54,1)
+         Min    8.60371E-03 @(c,r,l)=(13,16,1)
+         Mean   2.96794E-02
+         Sigma  7.38038E-03
+
+     Variable:  NO              
+          3-D grid statistics
+         Max    1.94584E-03 @(c,r,l)=(31,39,1)
+         Min    9.45774E-12 @(c,r,l)=(20,1,1)
+         Mean   6.51182E-06
+         Sigma  3.00526E-05
+
+     Variable:  NO2             
+          3-D grid statistics
+         Max    2.50943E-02 @(c,r,l)=(31,39,1)
+         Min    1.14635E-05 @(c,r,l)=(20,1,1)
+         Mean   1.31130E-03
+         Sigma  1.53392E-03
+
+     Variable:  ANO3I           
+          3-D grid statistics
+         Max    7.27280E-01 @(c,r,l)=(6,32,1)
+         Min    6.32526E-13 @(c,r,l)=(45,30,1)
+         Mean   1.19757E-02
+         Sigma  3.04731E-02
+
+     Variable:  ANO3J           
+          3-D grid statistics
+         Max    1.42857E+00 @(c,r,l)=(7,32,1)
+         Min    5.03483E-12 @(c,r,l)=(45,30,1)
+         Mean   1.08788E-01
+         Sigma  1.67108E-01
+
+     Variable:  ANH4I           
+          3-D grid statistics
+         Max    1.57441E-01 @(c,r,l)=(6,32,1)
+         Min    1.68181E-14 @(c,r,l)=(67,19,1)
+         Mean   1.34356E-02
+         Sigma  1.68614E-02
+
+     Variable:  ANH4J           
+          3-D grid statistics
+         Max    3.15409E-01 @(c,r,l)=(6,32,1)
+         Min    1.58416E-13 @(c,r,l)=(69,19,1)
+         Mean   3.10730E-02
+         Sigma  3.66502E-02
+
+     Variable:  ASO4I           
+          3-D grid statistics
+         Max    2.50926E-01 @(c,r,l)=(1,80,1)
+         Min    7.28520E-04 @(c,r,l)=(58,4,1)
+         Mean   2.16660E-02
+         Sigma  1.89662E-02
+
+     Variable:  ASO4J           
+          3-D grid statistics
+         Max    1.27650E+00 @(c,r,l)=(6,8,1)
+         Min    1.52283E-03 @(c,r,l)=(44,23,1)
+         Mean   3.45730E-01
+         Sigma  1.78763E-01
+
+     Variable:  NH3             
+          3-D grid statistics
+         Max    3.65645E-02 @(c,r,l)=(74,60,1)
+         Min    6.35553E-07 @(c,r,l)=(67,20,1)
+         Mean   1.34262E-03
+         Sigma  2.13007E-03
+
+     Variable:  W_VEL           
+          3-D grid statistics
+         Max    1.52736E-02 @(c,r,l)=(57,19,1)
+         Min   -1.73392E-02 @(c,r,l)=(70,18,1)
+         Mean  -3.18449E-05
+         Sigma  1.98245E-03
+
+
+     File:  FOO             
+     Date and time:  2022182:030000  (3:00:00   July 1, 2022  )
+
+     Variable:  O3              
+          3-D grid statistics
+         Max    5.32106E-02 @(c,r,l)=(46,20,1)
+         Min    5.92875E-03 @(c,r,l)=(13,16,1)
+         Mean   2.81251E-02
+         Sigma  7.61120E-03
+
+     Variable:  NO              
+          3-D grid statistics
+         Max    6.80744E-04 @(c,r,l)=(31,39,1)
+         Min    1.19090E-11 @(c,r,l)=(19,1,1)
+         Mean   6.50239E-06
+         Sigma  1.63698E-05
+
+     Variable:  NO2             
+          3-D grid statistics
+         Max    1.87879E-02 @(c,r,l)=(6,8,1)
+         Min    1.07803E-05 @(c,r,l)=(19,1,1)
+         Mean   1.38135E-03
+         Sigma  1.54216E-03
+
+     Variable:  ANO3I           
+          3-D grid statistics
+         Max    7.76789E-01 @(c,r,l)=(6,32,1)
+         Min    9.04327E-07 @(c,r,l)=(43,29,1)
+         Mean   1.36236E-02
+         Sigma  3.33216E-02
+
+     Variable:  ANO3J           
+          3-D grid statistics
+         Max    1.53567E+00 @(c,r,l)=(6,32,1)
+         Min    4.75522E-06 @(c,r,l)=(43,29,1)
+         Mean   1.18294E-01
+         Sigma  1.73546E-01
+
+     Variable:  ANH4I           
+          3-D grid statistics
+         Max    1.64032E-01 @(c,r,l)=(6,31,1)
+         Min    8.71216E-15 @(c,r,l)=(67,22,1)
+         Mean   1.28135E-02
+         Sigma  1.66875E-02
+
+     Variable:  ANH4J           
+          3-D grid statistics
+         Max    3.35371E-01 @(c,r,l)=(6,31,1)
+         Min    1.46624E-13 @(c,r,l)=(65,21,1)
+         Mean   3.03056E-02
+         Sigma  3.70649E-02
+
+     Variable:  ASO4I           
+          3-D grid statistics
+         Max    2.47753E-01 @(c,r,l)=(1,80,1)
+         Min    6.07601E-04 @(c,r,l)=(65,23,1)
+         Mean   2.15450E-02
+         Sigma  1.90567E-02
+
+     Variable:  ASO4J           
+          3-D grid statistics
+         Max    1.42494E+00 @(c,r,l)=(6,8,1)
+         Min    2.62761E-03 @(c,r,l)=(43,29,1)
+         Mean   3.42345E-01
+         Sigma  1.81620E-01
+
+     Variable:  NH3             
+          3-D grid statistics
+         Max    2.95475E-02 @(c,r,l)=(74,60,1)
+         Min    1.47946E-07 @(c,r,l)=(66,22,1)
+         Mean   1.16282E-03
+         Sigma  1.80504E-03
+
+     Variable:  W_VEL           
+          3-D grid statistics
+         Max    1.48711E-02 @(c,r,l)=(16,60,1)
+         Min   -1.73986E-02 @(c,r,l)=(25,60,1)
+         Mean  -3.79299E-05
+         Sigma  1.90879E-03
+
+
+     File:  FOO             
+     Date and time:  2022182:040000  (4:00:00   July 1, 2022  )
+
+     Variable:  O3              
+          3-D grid statistics
+         Max    5.21609E-02 @(c,r,l)=(37,58,1)
+         Min    4.90030E-03 @(c,r,l)=(13,16,1)
+         Mean   2.69760E-02
+         Sigma  7.86374E-03
+
+     Variable:  NO              
+          3-D grid statistics
+         Max    7.86825E-04 @(c,r,l)=(2,57,1)
+         Min    1.38836E-11 @(c,r,l)=(19,1,1)
+         Mean   6.86471E-06
+         Sigma  1.75503E-05
+
+     Variable:  NO2             
+          3-D grid statistics
+         Max    2.89136E-02 @(c,r,l)=(2,57,1)
+         Min    1.01954E-05 @(c,r,l)=(19,1,1)
+         Mean   1.39820E-03
+         Sigma  1.52329E-03
+
+     Variable:  ANO3I           
+          3-D grid statistics
+         Max    7.28390E-01 @(c,r,l)=(6,31,1)
+         Min    1.67275E-10 @(c,r,l)=(7,71,1)
+         Mean   1.47888E-02
+         Sigma  3.51817E-02
+
+     Variable:  ANO3J           
+          3-D grid statistics
+         Max    1.46278E+00 @(c,r,l)=(6,32,1)
+         Min    8.39608E-10 @(c,r,l)=(7,71,1)
+         Mean   1.26944E-01
+         Sigma  1.79113E-01
+
+     Variable:  ANH4I           
+          3-D grid statistics
+         Max    1.65955E-01 @(c,r,l)=(6,31,1)
+         Min    1.60027E-14 @(c,r,l)=(65,24,1)
+         Mean   1.23994E-02
+         Sigma  1.67044E-02
+
+     Variable:  ANH4J           
+          3-D grid statistics
+         Max    3.40024E-01 @(c,r,l)=(5,32,1)
+         Min    1.00729E-13 @(c,r,l)=(64,22,1)
+         Mean   2.99659E-02
+         Sigma  3.78327E-02
+
+     Variable:  ASO4I           
+          3-D grid statistics
+         Max    2.26525E-01 @(c,r,l)=(1,80,1)
+         Min    5.55857E-04 @(c,r,l)=(64,23,1)
+         Mean   2.12964E-02
+         Sigma  1.89620E-02
+
+     Variable:  ASO4J           
+          3-D grid statistics
+         Max    1.71563E+00 @(c,r,l)=(21,60,1)
+         Min    9.68478E-04 @(c,r,l)=(64,23,1)
+         Mean   3.39317E-01
+         Sigma  1.82938E-01
+
+     Variable:  NH3             
+          3-D grid statistics
+         Max    2.51625E-02 @(c,r,l)=(74,60,1)
+         Min    1.08622E-07 @(c,r,l)=(64,23,1)
+         Mean   1.02993E-03
+         Sigma  1.56638E-03
+
+     Variable:  W_VEL           
+          3-D grid statistics
+         Max    1.07632E-02 @(c,r,l)=(57,18,1)
+         Min   -1.37769E-02 @(c,r,l)=(15,63,1)
+         Mean  -5.39836E-05
+         Sigma  1.83511E-03
+
+
+     File:  FOO             
+     Date and time:  2022182:050000  (5:00:00   July 1, 2022  )
+
+     Variable:  O3              
+          3-D grid statistics
+         Max    5.14706E-02 @(c,r,l)=(97,79,1)
+         Min    2.27612E-03 @(c,r,l)=(2,57,1)
+         Mean   2.60126E-02
+         Sigma  8.05278E-03
+
+     Variable:  NO              
+          3-D grid statistics
+         Max    3.06731E-03 @(c,r,l)=(2,57,1)
+         Min    1.98697E-11 @(c,r,l)=(18,2,1)
+         Mean   7.47244E-06
+         Sigma  3.62578E-05
+
+     Variable:  NO2             
+          3-D grid statistics
+         Max    3.46911E-02 @(c,r,l)=(2,57,1)
+         Min    1.09351E-05 @(c,r,l)=(18,2,1)
+         Mean   1.40451E-03
+         Sigma  1.47262E-03
+
+     Variable:  ANO3I           
+          3-D grid statistics
+         Max    6.69436E-01 @(c,r,l)=(5,32,1)
+         Min    7.95235E-06 @(c,r,l)=(40,30,1)
+         Mean   1.54047E-02
+         Sigma  3.55528E-02
+
+     Variable:  ANO3J           
+          3-D grid statistics
+         Max    1.35328E+00 @(c,r,l)=(5,32,1)
+         Min    2.13574E-05 @(c,r,l)=(19,68,1)
+         Mean   1.34521E-01
+         Sigma  1.83218E-01
+
+     Variable:  ANH4I           
+          3-D grid statistics
+         Max    1.69575E-01 @(c,r,l)=(5,31,1)
+         Min    1.42520E-14 @(c,r,l)=(62,25,1)
+         Mean   1.19006E-02
+         Sigma  1.64735E-02
+
+     Variable:  ANH4J           
+          3-D grid statistics
+         Max    3.32318E-01 @(c,r,l)=(52,79,1)
+         Min    8.59337E-14 @(c,r,l)=(63,22,1)
+         Mean   2.93519E-02
+         Sigma  3.74795E-02
+
+     Variable:  ASO4I           
+          3-D grid statistics
+         Max    1.70932E-01 @(c,r,l)=(1,80,1)
+         Min    7.52219E-04 @(c,r,l)=(63,25,1)
+         Mean   2.10123E-02
+         Sigma  1.87699E-02
+
+     Variable:  ASO4J           
+          3-D grid statistics
+         Max    1.87258E+00 @(c,r,l)=(52,79,1)
+         Min    4.09762E-03 @(c,r,l)=(63,24,1)
+         Mean   3.36139E-01
+         Sigma  1.80513E-01
+
+     Variable:  NH3             
+          3-D grid statistics
+         Max    2.27519E-02 @(c,r,l)=(74,60,1)
+         Min    7.46006E-07 @(c,r,l)=(63,24,1)
+         Mean   9.22463E-04
+         Sigma  1.37970E-03
+
+     Variable:  W_VEL           
+          3-D grid statistics
+         Max    1.88677E-02 @(c,r,l)=(54,19,1)
+         Min   -1.24606E-02 @(c,r,l)=(69,9,1)
+         Mean  -5.83778E-05
+         Sigma  1.78678E-03
+
+
+     File:  FOO             
+     Date and time:  2022182:060000  (6:00:00   July 1, 2022  )
+
+     Variable:  O3              
+          3-D grid statistics
+         Max    5.09893E-02 @(c,r,l)=(97,80,1)
+         Min    6.02550E-03 @(c,r,l)=(13,16,1)
+         Mean   2.51802E-02
+         Sigma  8.22069E-03
+
+     Variable:  NO              
+          3-D grid statistics
+         Max    4.21942E-04 @(c,r,l)=(6,8,1)
+         Min    2.67418E-11 @(c,r,l)=(18,2,1)
+         Mean   7.73922E-06
+         Sigma  1.21660E-05
+
+     Variable:  NO2             
+          3-D grid statistics
+         Max    1.69304E-02 @(c,r,l)=(2,58,1)
+         Min    1.16840E-05 @(c,r,l)=(18,2,1)
+         Mean   1.41352E-03
+         Sigma  1.38107E-03
+
+     Variable:  ANO3I           
+          3-D grid statistics
+         Max    6.12975E-01 @(c,r,l)=(5,32,1)
+         Min    7.07636E-06 @(c,r,l)=(19,70,1)
+         Mean   1.61875E-02
+         Sigma  3.66234E-02
+
+     Variable:  ANO3J           
+          3-D grid statistics
+         Max    1.13315E+00 @(c,r,l)=(5,32,1)
+         Min    4.56866E-05 @(c,r,l)=(19,70,1)
+         Mean   1.43255E-01
+         Sigma  1.88926E-01
+
+     Variable:  ANH4I           
+          3-D grid statistics
+         Max    1.64859E-01 @(c,r,l)=(5,31,1)
+         Min    1.69701E-14 @(c,r,l)=(62,25,1)
+         Mean   1.14506E-02
+         Sigma  1.62791E-02
+
+     Variable:  ANH4J           
+          3-D grid statistics
+         Max    4.06565E-01 @(c,r,l)=(40,55,1)
+         Min    1.14059E-13 @(c,r,l)=(62,22,1)
+         Mean   2.89516E-02
+         Sigma  3.72759E-02
+
+     Variable:  ASO4I           
+          3-D grid statistics
+         Max    1.25327E-01 @(c,r,l)=(9,20,1)
+         Min    5.94261E-04 @(c,r,l)=(61,22,1)
+         Mean   2.06689E-02
+         Sigma  1.85029E-02
+
+     Variable:  ASO4J           
+          3-D grid statistics
+         Max    1.86241E+00 @(c,r,l)=(52,79,1)
+         Min    6.59897E-03 @(c,r,l)=(60,22,1)
+         Mean   3.33002E-01
+         Sigma  1.76645E-01
+
+     Variable:  NH3             
+          3-D grid statistics
+         Max    1.91130E-02 @(c,r,l)=(76,58,1)
+         Min    2.87370E-07 @(c,r,l)=(61,23,1)
+         Mean   8.36251E-04
+         Sigma  1.24823E-03
+
+     Variable:  W_VEL           
+          3-D grid statistics
+         Max    2.42366E-02 @(c,r,l)=(64,19,1)
+         Min   -1.28171E-02 @(c,r,l)=(69,9,1)
+         Mean  -5.37996E-05
+         Sigma  1.83261E-03
+
+
+     File:  FOO             
+     Date and time:  2022182:070000  (7:00:00   July 1, 2022  )
+
+     Variable:  O3              
+          3-D grid statistics
+         Max    5.01505E-02 @(c,r,l)=(97,80,1)
+         Min    6.66441E-03 @(c,r,l)=(13,16,1)
+         Mean   2.44507E-02
+         Sigma  8.38205E-03
+
+     Variable:  NO              
+          3-D grid statistics
+         Max    4.14162E-04 @(c,r,l)=(6,8,1)
+         Min    3.96537E-11 @(c,r,l)=(18,2,1)
+         Mean   8.82710E-06
+         Sigma  1.41758E-05
+
+     Variable:  NO2             
+          3-D grid statistics
+         Max    1.25841E-02 @(c,r,l)=(6,8,1)
+         Min    1.29024E-05 @(c,r,l)=(18,5,1)
+         Mean   1.44035E-03
+         Sigma  1.34627E-03
+
+     Variable:  ANO3I           
+          3-D grid statistics
+         Max    6.02487E-01 @(c,r,l)=(4,33,1)
+         Min    2.51563E-05 @(c,r,l)=(20,71,1)
+         Mean   1.65701E-02
+         Sigma  3.51481E-02
+
+     Variable:  ANO3J           
+          3-D grid statistics
+         Max    1.50450E+00 @(c,r,l)=(71,1,1)
+         Min    4.59997E-05 @(c,r,l)=(4,1,1)
+         Mean   1.50702E-01
+         Sigma  1.93944E-01
+
+     Variable:  ANH4I           
+          3-D grid statistics
+         Max    1.70377E-01 @(c,r,l)=(4,33,1)
+         Min    1.00470E-14 @(c,r,l)=(61,25,1)
+         Mean   1.08745E-02
+         Sigma  1.56316E-02
+
+     Variable:  ANH4J           
+          3-D grid statistics
+         Max    3.54945E-01 @(c,r,l)=(40,55,1)
+         Min    1.57351E-13 @(c,r,l)=(62,25,1)
+         Mean   2.83309E-02
+         Sigma  3.62116E-02
+
+     Variable:  ASO4I           
+          3-D grid statistics
+         Max    1.30671E-01 @(c,r,l)=(11,10,1)
+         Min    4.35386E-04 @(c,r,l)=(59,24,1)
+         Mean   2.03531E-02
+         Sigma  1.83172E-02
+
+     Variable:  ASO4J           
+          3-D grid statistics
+         Max    1.93528E+00 @(c,r,l)=(52,79,1)
+         Min    6.68966E-03 @(c,r,l)=(59,24,1)
+         Mean   3.30851E-01
+         Sigma  1.73931E-01
+
+     Variable:  NH3             
+          3-D grid statistics
+         Max    1.97250E-02 @(c,r,l)=(76,58,1)
+         Min    1.79093E-07 @(c,r,l)=(60,24,1)
+         Mean   7.63816E-04
+         Sigma  1.13836E-03
+
+     Variable:  W_VEL           
+          3-D grid statistics
+         Max    1.89623E-02 @(c,r,l)=(56,18,1)
+         Min   -1.61371E-02 @(c,r,l)=(59,20,1)
+         Mean  -4.87383E-05
+         Sigma  1.87599E-03
+
+
+     File:  FOO             
+     Date and time:  2022182:080000  (8:00:00   July 1, 2022  )
+
+     Variable:  O3              
+          3-D grid statistics
+         Max    5.47062E-02 @(c,r,l)=(59,20,1)
+         Min    5.70673E-03 @(c,r,l)=(4,19,1)
+         Mean   2.38292E-02
+         Sigma  8.61073E-03
+
+     Variable:  NO              
+          3-D grid statistics
+         Max    3.44313E-04 @(c,r,l)=(16,79,1)
+         Min    4.91648E-11 @(c,r,l)=(19,2,1)
+         Mean   1.06592E-05
+         Sigma  1.78005E-05
+
+     Variable:  NO2             
+          3-D grid statistics
+         Max    1.13958E-02 @(c,r,l)=(6,8,1)
+         Min    1.18211E-05 @(c,r,l)=(13,1,1)
+         Mean   1.49611E-03
+         Sigma  1.37101E-03
+
+     Variable:  ANO3I           
+          3-D grid statistics
+         Max    6.04193E-01 @(c,r,l)=(11,47,1)
+         Min    8.81262E-13 @(c,r,l)=(17,1,1)
+         Mean   1.69419E-02
+         Sigma  3.25068E-02
+
+     Variable:  ANO3J           
+          3-D grid statistics
+         Max    1.58683E+00 @(c,r,l)=(71,2,1)
+         Min    5.13674E-12 @(c,r,l)=(17,1,1)
+         Mean   1.58373E-01
+         Sigma  1.99078E-01
+
+     Variable:  ANH4I           
+          3-D grid statistics
+         Max    1.59132E-01 @(c,r,l)=(10,47,1)
+         Min    2.04523E-14 @(c,r,l)=(62,40,1)
+         Mean   1.02518E-02
+         Sigma  1.46664E-02
+
+     Variable:  ANH4J           
+          3-D grid statistics
+         Max    3.57806E-01 @(c,r,l)=(52,79,1)
+         Min    1.59548E-13 @(c,r,l)=(62,40,1)
+         Mean   2.77285E-02
+         Sigma  3.52776E-02
+
+     Variable:  ASO4I           
+          3-D grid statistics
+         Max    1.41109E-01 @(c,r,l)=(11,10,1)
+         Min    6.46672E-04 @(c,r,l)=(58,25,1)
+         Mean   2.01799E-02
+         Sigma  1.82507E-02
+
+     Variable:  ASO4J           
+          3-D grid statistics
+         Max    2.00315E+00 @(c,r,l)=(52,79,1)
+         Min    1.57461E-03 @(c,r,l)=(58,24,1)
+         Mean   3.30610E-01
+         Sigma  1.73058E-01
+
+     Variable:  NH3             
+          3-D grid statistics
+         Max    1.98104E-02 @(c,r,l)=(76,58,1)
+         Min    3.51987E-06 @(c,r,l)=(60,24,1)
+         Mean   7.06375E-04
+         Sigma  1.05552E-03
+
+     Variable:  W_VEL           
+          3-D grid statistics
+         Max    2.03435E-02 @(c,r,l)=(64,19,1)
+         Min   -1.30758E-02 @(c,r,l)=(61,10,1)
+         Mean  -5.50271E-05
+         Sigma  1.98451E-03
+
+
+     File:  FOO             
+     Date and time:  2022182:090000  (9:00:00   July 1, 2022  )
+
+     Variable:  O3              
+          3-D grid statistics
+         Max    5.90044E-02 @(c,r,l)=(60,20,1)
+         Min    5.18873E-03 @(c,r,l)=(56,50,1)
+         Mean   2.32746E-02
+         Sigma  8.93035E-03
+
+     Variable:  NO              
+          3-D grid statistics
+         Max    5.91193E-04 @(c,r,l)=(55,55,1)
+         Min    2.43661E-11 @(c,r,l)=(13,1,1)
+         Mean   1.45431E-05
+         Sigma  2.64446E-05
+
+     Variable:  NO2             
+          3-D grid statistics
+         Max    1.13256E-02 @(c,r,l)=(6,8,1)
+         Min    8.87549E-06 @(c,r,l)=(13,1,1)
+         Mean   1.61292E-03
+         Sigma  1.47888E-03
+
+     Variable:  ANO3I           
+          3-D grid statistics
+         Max    6.90290E-01 @(c,r,l)=(10,47,1)
+         Min    2.21024E-13 @(c,r,l)=(17,1,1)
+         Mean   1.83485E-02
+         Sigma  3.50342E-02
+
+     Variable:  ANO3J           
+          3-D grid statistics
+         Max    1.67597E+00 @(c,r,l)=(69,5,1)
+         Min    7.60305E-13 @(c,r,l)=(11,1,1)
+         Mean   1.68601E-01
+         Sigma  2.04772E-01
+
+     Variable:  ANH4I           
+          3-D grid statistics
+         Max    1.77654E-01 @(c,r,l)=(10,47,1)
+         Min    1.95864E-14 @(c,r,l)=(62,40,1)
+         Mean   9.84477E-03
+         Sigma  1.44660E-02
+
+     Variable:  ANH4J           
+          3-D grid statistics
+         Max    3.70890E-01 @(c,r,l)=(52,79,1)
+         Min    1.56380E-13 @(c,r,l)=(37,14,1)
+         Mean   2.75617E-02
+         Sigma  3.52813E-02
+
+     Variable:  ASO4I           
+          3-D grid statistics
+         Max    1.46700E-01 @(c,r,l)=(10,10,1)
+         Min    8.53066E-04 @(c,r,l)=(94,37,1)
+         Mean   2.01775E-02
+         Sigma  1.84051E-02
+
+     Variable:  ASO4J           
+          3-D grid statistics
+         Max    2.08323E+00 @(c,r,l)=(52,79,1)
+         Min    3.98598E-03 @(c,r,l)=(58,23,1)
+         Mean   3.31739E-01
+         Sigma  1.74474E-01
+
+     Variable:  NH3             
+          3-D grid statistics
+         Max    1.78006E-02 @(c,r,l)=(76,58,1)
+         Min    5.93638E-06 @(c,r,l)=(60,24,1)
+         Mean   6.74889E-04
+         Sigma  1.00778E-03
+
+     Variable:  W_VEL           
+          3-D grid statistics
+         Max    2.59479E-02 @(c,r,l)=(64,20,1)
+         Min   -1.32031E-02 @(c,r,l)=(70,8,1)
+         Mean  -5.36136E-05
+         Sigma  2.06877E-03
+
+
+     File:  FOO             
+     Date and time:  2022182:100000  (10:00:00  July 1, 2022  )
+
+     Variable:  O3              
+          3-D grid statistics
+         Max    6.25208E-02 @(c,r,l)=(59,20,1)
+         Min    2.37532E-03 @(c,r,l)=(55,55,1)
+         Mean   2.27536E-02
+         Sigma  9.35001E-03
+
+     Variable:  NO              
+          3-D grid statistics
+         Max    1.89362E-03 @(c,r,l)=(55,55,1)
+         Min    1.78420E-11 @(c,r,l)=(13,1,1)
+         Mean   2.33371E-05
+         Sigma  5.61687E-05
+
+     Variable:  NO2             
+          3-D grid statistics
+         Max    1.32604E-02 @(c,r,l)=(46,53,1)
+         Min    6.78070E-06 @(c,r,l)=(14,1,1)
+         Mean   1.84127E-03
+         Sigma  1.76705E-03
+
+     Variable:  ANO3I           
+          3-D grid statistics
+         Max    7.70786E-01 @(c,r,l)=(10,47,1)
+         Min    1.37874E-13 @(c,r,l)=(9,2,1)
+         Mean   2.09243E-02
+         Sigma  4.00360E-02
+
+     Variable:  ANO3J           
+          3-D grid statistics
+         Max    1.76137E+00 @(c,r,l)=(68,7,1)
+         Min    4.60431E-13 @(c,r,l)=(10,3,1)
+         Mean   1.83081E-01
+         Sigma  2.12840E-01
+
+     Variable:  ANH4I           
+          3-D grid statistics
+         Max    1.88970E-01 @(c,r,l)=(10,47,1)
+         Min    1.82473E-14 @(c,r,l)=(70,49,1)
+         Mean   9.59030E-03
+         Sigma  1.44928E-02
+
+     Variable:  ANH4J           
+          3-D grid statistics
+         Max    3.85372E-01 @(c,r,l)=(52,79,1)
+         Min    1.16097E-13 @(c,r,l)=(61,25,1)
+         Mean   2.79839E-02
+         Sigma  3.62864E-02
+
+     Variable:  ASO4I           
+          3-D grid statistics
+         Max    1.48686E-01 @(c,r,l)=(13,20,1)
+         Min    6.90256E-04 @(c,r,l)=(81,9,1)
+         Mean   2.03263E-02
+         Sigma  1.87844E-02
+
+     Variable:  ASO4J           
+          3-D grid statistics
+         Max    2.18728E+00 @(c,r,l)=(52,79,1)
+         Min    6.12651E-03 @(c,r,l)=(60,25,1)
+         Mean   3.34343E-01
+         Sigma  1.77905E-01
+
+     Variable:  NH3             
+          3-D grid statistics
+         Max    1.66840E-02 @(c,r,l)=(77,60,1)
+         Min    1.99870E-06 @(c,r,l)=(61,25,1)
+         Mean   6.72881E-04
+         Sigma  9.90431E-04
+
+     Variable:  W_VEL           
+          3-D grid statistics
+         Max    2.26312E-02 @(c,r,l)=(75,8,1)
+         Min   -1.65396E-02 @(c,r,l)=(72,6,1)
+         Mean  -5.41314E-05
+         Sigma  2.19890E-03
+
+
+     File:  FOO             
+     Date and time:  2022182:110000  (11:00:00  July 1, 2022  )
+
+     Variable:  O3              
+          3-D grid statistics
+         Max    6.82751E-02 @(c,r,l)=(63,19,1)
+         Min    1.75950E-03 @(c,r,l)=(13,12,1)
+         Mean   2.27297E-02
+         Sigma  9.58446E-03
+
+     Variable:  NO              
+          3-D grid statistics
+         Max    4.92105E-03 @(c,r,l)=(55,55,1)
+         Min    3.29064E-11 @(c,r,l)=(12,2,1)
+         Mean   1.25618E-04
+         Sigma  2.87554E-04
+
+     Variable:  NO2             
+          3-D grid statistics
+         Max    1.90792E-02 @(c,r,l)=(18,25,1)
+         Min    7.15107E-06 @(c,r,l)=(13,2,1)
+         Mean   1.96027E-03
+         Sigma  2.00253E-03
+
+     Variable:  ANO3I           
+          3-D grid statistics
+         Max    8.34334E-01 @(c,r,l)=(10,48,1)
+         Min    6.19867E-14 @(c,r,l)=(15,1,1)
+         Mean   2.38996E-02
+         Sigma  4.61401E-02
+
+     Variable:  ANO3J           
+          3-D grid statistics
+         Max    2.38064E+00 @(c,r,l)=(65,10,1)
+         Min    4.50847E-13 @(c,r,l)=(9,3,1)
+         Mean   1.95943E-01
+         Sigma  2.22246E-01
+
+     Variable:  ANH4I           
+          3-D grid statistics
+         Max    1.84632E-01 @(c,r,l)=(10,48,1)
+         Min    1.68601E-14 @(c,r,l)=(65,44,1)
+         Mean   9.59738E-03
+         Sigma  1.46835E-02
+
+     Variable:  ANH4J           
+          3-D grid statistics
+         Max    3.89161E-01 @(c,r,l)=(52,79,1)
+         Min    1.11182E-13 @(c,r,l)=(61,25,1)
+         Mean   2.93428E-02
+         Sigma  3.85319E-02
+
+     Variable:  ASO4I           
+          3-D grid statistics
+         Max    1.78075E-01 @(c,r,l)=(13,20,1)
+         Min    5.14523E-04 @(c,r,l)=(68,13,1)
+         Mean   2.04491E-02
+         Sigma  1.91106E-02
+
+     Variable:  ASO4J           
+          3-D grid statistics
+         Max    2.25500E+00 @(c,r,l)=(52,79,1)
+         Min    3.93446E-03 @(c,r,l)=(67,13,1)
+         Mean   3.38437E-01
+         Sigma  1.83868E-01
+
+     Variable:  NH3             
+          3-D grid statistics
+         Max    1.82729E-02 @(c,r,l)=(77,60,1)
+         Min    7.94370E-07 @(c,r,l)=(67,14,1)
+         Mean   6.95047E-04
+         Sigma  1.07367E-03
+
+     Variable:  W_VEL           
+          3-D grid statistics
+         Max    1.75098E-02 @(c,r,l)=(74,9,1)
+         Min   -1.57358E-02 @(c,r,l)=(69,9,1)
+         Mean  -5.52848E-05
+         Sigma  2.10670E-03
+
+
+     File:  FOO             
+     Date and time:  2022182:120000  (12:00:00  July 1, 2022  )
+
+     Variable:  O3              
+          3-D grid statistics
+         Max    7.69539E-02 @(c,r,l)=(63,19,1)
+         Min    7.16938E-03 @(c,r,l)=(3,19,1)
+         Mean   2.76420E-02
+         Sigma  7.82032E-03
+
+     Variable:  NO              
+          3-D grid statistics
+         Max    4.91045E-03 @(c,r,l)=(66,37,1)
+         Min    9.04430E-09 @(c,r,l)=(74,21,1)
+         Mean   2.77156E-04
+         Sigma  3.59756E-04
+
+     Variable:  NO2             
+          3-D grid statistics
+         Max    1.57655E-02 @(c,r,l)=(5,8,1)
+         Min    1.15936E-05 @(c,r,l)=(17,1,1)
+         Mean   1.21921E-03
+         Sigma  1.25054E-03
+
+     Variable:  ANO3I           
+          3-D grid statistics
+         Max    7.81030E-01 @(c,r,l)=(17,25,1)
+         Min    9.47051E-14 @(c,r,l)=(17,1,1)
+         Mean   2.06635E-02
+         Sigma  4.78130E-02
+
+     Variable:  ANO3J           
+          3-D grid statistics
+         Max    2.77400E+00 @(c,r,l)=(66,10,1)
+         Min    4.79187E-13 @(c,r,l)=(12,2,1)
+         Mean   1.82852E-01
+         Sigma  2.29262E-01
+
+     Variable:  ANH4I           
+          3-D grid statistics
+         Max    1.93465E-01 @(c,r,l)=(17,26,1)
+         Min    1.77318E-14 @(c,r,l)=(98,61,1)
+         Mean   9.57734E-03
+         Sigma  1.54655E-02
+
+     Variable:  ANH4J           
+          3-D grid statistics
+         Max    4.42252E-01 @(c,r,l)=(60,56,1)
+         Min    1.13599E-13 @(c,r,l)=(67,15,1)
+         Mean   2.97834E-02
+         Sigma  4.12190E-02
+
+     Variable:  ASO4I           
+          3-D grid statistics
+         Max    1.27158E-01 @(c,r,l)=(12,20,1)
+         Min    2.94246E-04 @(c,r,l)=(67,16,1)
+         Mean   1.89535E-02
+         Sigma  1.78106E-02
+
+     Variable:  ASO4J           
+          3-D grid statistics
+         Max    1.84691E+00 @(c,r,l)=(60,56,1)
+         Min    3.58289E-03 @(c,r,l)=(66,15,1)
+         Mean   3.32744E-01
+         Sigma  1.74214E-01
+
+     Variable:  NH3             
+          3-D grid statistics
+         Max    1.93697E-02 @(c,r,l)=(77,60,1)
+         Min    1.65016E-07 @(c,r,l)=(67,16,1)
+         Mean   7.10280E-04
+         Sigma  1.03220E-03
+
+     Variable:  W_VEL           
+          3-D grid statistics
+         Max    2.49566E-02 @(c,r,l)=(8,2,1)
+         Min   -2.09132E-02 @(c,r,l)=(90,59,1)
+         Mean  -3.53111E-05
+         Sigma  1.97170E-03
+
+
+     File:  FOO             
+     Date and time:  2022182:130000  (13:00:00  July 1, 2022  )
+
+     Variable:  O3              
+          3-D grid statistics
+         Max    6.44171E-02 @(c,r,l)=(59,20,1)
+         Min    1.15260E-02 @(c,r,l)=(3,19,1)
+         Mean   3.28694E-02
+         Sigma  6.70916E-03
+
+     Variable:  NO              
+          3-D grid statistics
+         Max    4.50633E-03 @(c,r,l)=(5,8,1)
+         Min    1.68418E-08 @(c,r,l)=(72,6,1)
+         Mean   2.08630E-04
+         Sigma  2.58200E-04
+
+     Variable:  NO2             
+          3-D grid statistics
+         Max    1.86559E-02 @(c,r,l)=(5,8,1)
+         Min    7.87984E-06 @(c,r,l)=(17,1,1)
+         Mean   7.58447E-04
+         Sigma  8.03919E-04
+
+     Variable:  ANO3I           
+          3-D grid statistics
+         Max    8.00265E-01 @(c,r,l)=(18,25,1)
+         Min    1.92392E-13 @(c,r,l)=(17,1,1)
+         Mean   1.52947E-02
+         Sigma  3.82137E-02
+
+     Variable:  ANO3J           
+          3-D grid statistics
+         Max    2.22450E+00 @(c,r,l)=(66,11,1)
+         Min    6.83366E-13 @(c,r,l)=(20,1,1)
+         Mean   1.64641E-01
+         Sigma  2.24070E-01
+
+     Variable:  ANH4I           
+          3-D grid statistics
+         Max    2.05230E-01 @(c,r,l)=(18,25,1)
+         Min    8.51684E-15 @(c,r,l)=(68,17,1)
+         Mean   9.46886E-03
+         Sigma  1.53362E-02
+
+     Variable:  ANH4J           
+          3-D grid statistics
+         Max    7.53051E-01 @(c,r,l)=(60,56,1)
+         Min    1.28318E-13 @(c,r,l)=(67,19,1)
+         Mean   2.93115E-02
+         Sigma  4.26302E-02
+
+     Variable:  ASO4I           
+          3-D grid statistics
+         Max    1.33521E-01 @(c,r,l)=(19,10,1)
+         Min    2.52335E-04 @(c,r,l)=(84,16,1)
+         Mean   1.75185E-02
+         Sigma  1.67632E-02
+
+     Variable:  ASO4J           
+          3-D grid statistics
+         Max    2.61274E+00 @(c,r,l)=(60,56,1)
+         Min    3.56755E-03 @(c,r,l)=(63,24,1)
+         Mean   3.25488E-01
+         Sigma  1.71254E-01
+
+     Variable:  NH3             
+          3-D grid statistics
+         Max    2.04283E-02 @(c,r,l)=(76,58,1)
+         Min    1.75909E-07 @(c,r,l)=(67,18,1)
+         Mean   8.22067E-04
+         Sigma  1.09764E-03
+
+     Variable:  W_VEL           
+          3-D grid statistics
+         Max    2.07690E-02 @(c,r,l)=(63,21,1)
+         Min   -1.76418E-02 @(c,r,l)=(71,7,1)
+         Mean  -2.67586E-05
+         Sigma  1.91483E-03
+
+
+     File:  FOO             
+     Date and time:  2022182:140000  (14:00:00  July 1, 2022  )
+
+     Variable:  O3              
+          3-D grid statistics
+         Max    7.42000E-02 @(c,r,l)=(31,60,1)
+         Min    1.65038E-02 @(c,r,l)=(63,44,1)
+         Mean   3.66272E-02
+         Sigma  7.53241E-03
+
+     Variable:  NO              
+          3-D grid statistics
+         Max    5.63574E-03 @(c,r,l)=(5,8,1)
+         Min    2.80450E-08 @(c,r,l)=(97,41,1)
+         Mean   1.43167E-04
+         Sigma  1.88632E-04
+
+     Variable:  NO2             
+          3-D grid statistics
+         Max    1.00128E-02 @(c,r,l)=(5,9,1)
+         Min    9.59556E-06 @(c,r,l)=(17,1,1)
+         Mean   5.15869E-04
+         Sigma  5.72153E-04
+
+     Variable:  ANO3I           
+          3-D grid statistics
+         Max    1.03744E+00 @(c,r,l)=(18,25,1)
+         Min    1.94955E-13 @(c,r,l)=(21,1,1)
+         Mean   1.25023E-02
+         Sigma  2.89962E-02
+
+     Variable:  ANO3J           
+          3-D grid statistics
+         Max    1.81153E+00 @(c,r,l)=(65,13,1)
+         Min    7.07036E-13 @(c,r,l)=(21,1,1)
+         Mean   1.52467E-01
+         Sigma  2.16628E-01
+
+     Variable:  ANH4I           
+          3-D grid statistics
+         Max    2.94134E-01 @(c,r,l)=(18,25,1)
+         Min    1.63098E-14 @(c,r,l)=(98,59,1)
+         Mean   9.97937E-03
+         Sigma  1.55077E-02
+
+     Variable:  ANH4J           
+          3-D grid statistics
+         Max    4.72024E-01 @(c,r,l)=(49,55,1)
+         Min    7.81541E-14 @(c,r,l)=(68,20,1)
+         Mean   3.02220E-02
+         Sigma  4.12699E-02
+
+     Variable:  ASO4I           
+          3-D grid statistics
+         Max    1.41030E-01 @(c,r,l)=(13,31,1)
+         Min    1.80503E-04 @(c,r,l)=(82,18,1)
+         Mean   1.74109E-02
+         Sigma  1.74234E-02
+
+     Variable:  ASO4J           
+          3-D grid statistics
+         Max    2.53758E+00 @(c,r,l)=(49,55,1)
+         Min    2.01362E-03 @(c,r,l)=(63,24,1)
+         Mean   3.23859E-01
+         Sigma  1.79094E-01
+
+     Variable:  NH3             
+          3-D grid statistics
+         Max    2.56087E-02 @(c,r,l)=(76,58,1)
+         Min    4.99005E-07 @(c,r,l)=(67,20,1)
+         Mean   9.98036E-04
+         Sigma  1.38052E-03
+
+     Variable:  W_VEL           
+          3-D grid statistics
+         Max    2.34577E-02 @(c,r,l)=(68,24,1)
+         Min   -1.62880E-02 @(c,r,l)=(71,7,1)
+         Mean  -3.33762E-05
+         Sigma  1.93854E-03
+
+
+     File:  FOO             
+     Date and time:  2022182:150000  (15:00:00  July 1, 2022  )
+
+     Variable:  O3              
+          3-D grid statistics
+         Max    7.93948E-02 @(c,r,l)=(31,61,1)
+         Min    2.00782E-02 @(c,r,l)=(8,20,1)
+         Mean   3.95798E-02
+         Sigma  8.94560E-03
+
+     Variable:  NO              
+          3-D grid statistics
+         Max    7.94740E-03 @(c,r,l)=(87,80,1)
+         Min    2.06207E-08 @(c,r,l)=(83,36,1)
+         Mean   9.72695E-05
+         Sigma  1.46777E-04
+
+     Variable:  NO2             
+          3-D grid statistics
+         Max    1.18760E-02 @(c,r,l)=(87,80,1)
+         Min    9.22471E-06 @(c,r,l)=(17,1,1)
+         Mean   3.65530E-04
+         Sigma  4.04834E-04
+
+     Variable:  ANO3I           
+          3-D grid statistics
+         Max    7.42367E-01 @(c,r,l)=(48,9,1)
+         Min    1.38527E-13 @(c,r,l)=(16,3,1)
+         Mean   1.12910E-02
+         Sigma  2.33793E-02
+
+     Variable:  ANO3J           
+          3-D grid statistics
+         Max    1.59528E+00 @(c,r,l)=(48,10,1)
+         Min    4.34816E-13 @(c,r,l)=(98,61,1)
+         Mean   1.44875E-01
+         Sigma  2.12774E-01
+
+     Variable:  ANH4I           
+          3-D grid statistics
+         Max    2.31797E-01 @(c,r,l)=(48,56,1)
+         Min    4.89737E-15 @(c,r,l)=(63,25,1)
+         Mean   1.08695E-02
+         Sigma  1.67082E-02
+
+     Variable:  ANH4J           
+          3-D grid statistics
+         Max    6.05852E-01 @(c,r,l)=(49,55,1)
+         Min    8.47028E-14 @(c,r,l)=(69,20,1)
+         Mean   3.21057E-02
+         Sigma  4.50268E-02
+
+     Variable:  ASO4I           
+          3-D grid statistics
+         Max    1.63251E-01 @(c,r,l)=(5,76,1)
+         Min    1.45115E-04 @(c,r,l)=(81,19,1)
+         Mean   1.74406E-02
+         Sigma  1.85943E-02
+
+     Variable:  ASO4J           
+          3-D grid statistics
+         Max    3.21324E+00 @(c,r,l)=(49,55,1)
+         Min    2.27087E-03 @(c,r,l)=(61,26,1)
+         Mean   3.22580E-01
+         Sigma  1.97583E-01
+
+     Variable:  NH3             
+          3-D grid statistics
+         Max    3.12402E-02 @(c,r,l)=(76,58,1)
+         Min    6.80152E-08 @(c,r,l)=(69,24,1)
+         Mean   1.16224E-03
+         Sigma  1.68872E-03
+
+     Variable:  W_VEL           
+          3-D grid statistics
+         Max    2.27847E-02 @(c,r,l)=(61,23,1)
+         Min   -1.45002E-02 @(c,r,l)=(70,8,1)
+         Mean  -4.31264E-05
+         Sigma  2.06185E-03
+
+
+     File:  FOO             
+     Date and time:  2022182:160000  (16:00:00  July 1, 2022  )
+
+     Variable:  O3              
+          3-D grid statistics
+         Max    8.24968E-02 @(c,r,l)=(31,61,1)
+         Min    2.20038E-02 @(c,r,l)=(67,41,1)
+         Mean   4.15917E-02
+         Sigma  1.00152E-02
+
+     Variable:  NO              
+          3-D grid statistics
+         Max    6.34174E-03 @(c,r,l)=(87,80,1)
+         Min    4.36754E-08 @(c,r,l)=(71,13,1)
+         Mean   7.35545E-05
+         Sigma  1.11874E-04
+
+     Variable:  NO2             
+          3-D grid statistics
+         Max    1.05564E-02 @(c,r,l)=(87,80,1)
+         Min    1.00069E-05 @(c,r,l)=(17,1,1)
+         Mean   2.88629E-04
+         Sigma  3.17726E-04
+
+     Variable:  ANO3I           
+          3-D grid statistics
+         Max    7.93283E-01 @(c,r,l)=(49,9,1)
+         Min    1.28988E-13 @(c,r,l)=(17,1,1)
+         Mean   1.09027E-02
+         Sigma  2.41235E-02
+
+     Variable:  ANO3J           
+          3-D grid statistics
+         Max    1.51639E+00 @(c,r,l)=(48,10,1)
+         Min    4.91012E-13 @(c,r,l)=(17,1,1)
+         Mean   1.39313E-01
+         Sigma  2.10158E-01
+
+     Variable:  ANH4I           
+          3-D grid statistics
+         Max    2.98204E-01 @(c,r,l)=(48,56,1)
+         Min    8.57965E-15 @(c,r,l)=(69,29,1)
+         Mean   1.16166E-02
+         Sigma  1.78836E-02
+
+     Variable:  ANH4J           
+          3-D grid statistics
+         Max    7.24846E-01 @(c,r,l)=(48,56,1)
+         Min    8.68784E-14 @(c,r,l)=(70,24,1)
+         Mean   3.28106E-02
+         Sigma  4.63978E-02
+
+     Variable:  ASO4I           
+          3-D grid statistics
+         Max    1.41695E-01 @(c,r,l)=(6,77,1)
+         Min    2.04407E-04 @(c,r,l)=(92,29,1)
+         Mean   1.70730E-02
+         Sigma  1.80524E-02
+
+     Variable:  ASO4J           
+          3-D grid statistics
+         Max    3.95524E+00 @(c,r,l)=(48,56,1)
+         Min    1.22731E-03 @(c,r,l)=(53,37,1)
+         Mean   3.19039E-01
+         Sigma  2.08425E-01
+
+     Variable:  NH3             
+          3-D grid statistics
+         Max    3.36889E-02 @(c,r,l)=(78,61,1)
+         Min    3.16121E-08 @(c,r,l)=(66,28,1)
+         Mean   1.31073E-03
+         Sigma  1.98837E-03
+
+     Variable:  W_VEL           
+          3-D grid statistics
+         Max    2.47072E-02 @(c,r,l)=(60,24,1)
+         Min   -1.48409E-02 @(c,r,l)=(72,16,1)
+         Mean  -5.30880E-05
+         Sigma  2.29436E-03
+
+
+     File:  FOO             
+     Date and time:  2022182:170000  (17:00:00  July 1, 2022  )
+
+     Variable:  O3              
+          3-D grid statistics
+         Max    8.23731E-02 @(c,r,l)=(31,61,1)
+         Min    2.17542E-02 @(c,r,l)=(68,43,1)
+         Mean   4.27641E-02
+         Sigma  1.05884E-02
+
+     Variable:  NO              
+          3-D grid statistics
+         Max    4.39188E-03 @(c,r,l)=(87,80,1)
+         Min    2.09913E-08 @(c,r,l)=(67,21,1)
+         Mean   6.34906E-05
+         Sigma  8.99872E-05
+
+     Variable:  NO2             
+          3-D grid statistics
+         Max    8.32391E-03 @(c,r,l)=(87,80,1)
+         Min    1.18135E-05 @(c,r,l)=(16,2,1)
+         Mean   2.57238E-04
+         Sigma  2.81700E-04
+
+     Variable:  ANO3I           
+          3-D grid statistics
+         Max    8.93908E-01 @(c,r,l)=(49,10,1)
+         Min    3.30020E-13 @(c,r,l)=(17,3,1)
+         Mean   1.06906E-02
+         Sigma  2.08612E-02
+
+     Variable:  ANO3J           
+          3-D grid statistics
+         Max    1.33587E+00 @(c,r,l)=(48,10,1)
+         Min    2.23210E-12 @(c,r,l)=(17,2,1)
+         Mean   1.35288E-01
+         Sigma  2.08105E-01
+
+     Variable:  ANH4I           
+          3-D grid statistics
+         Max    3.27842E-01 @(c,r,l)=(48,56,1)
+         Min    9.56207E-15 @(c,r,l)=(66,32,1)
+         Mean   1.24522E-02
+         Sigma  1.81987E-02
+
+     Variable:  ANH4J           
+          3-D grid statistics
+         Max    8.05661E-01 @(c,r,l)=(48,56,1)
+         Min    1.43747E-13 @(c,r,l)=(70,27,1)
+         Mean   3.28780E-02
+         Sigma  4.62000E-02
+
+     Variable:  ASO4I           
+          3-D grid statistics
+         Max    1.58193E-01 @(c,r,l)=(9,79,1)
+         Min    1.94907E-04 @(c,r,l)=(92,29,1)
+         Mean   1.69425E-02
+         Sigma  1.78038E-02
+
+     Variable:  ASO4J           
+          3-D grid statistics
+         Max    4.37346E+00 @(c,r,l)=(48,56,1)
+         Min    1.18590E-03 @(c,r,l)=(61,26,1)
+         Mean   3.15602E-01
+         Sigma  2.12315E-01
+
+     Variable:  NH3             
+          3-D grid statistics
+         Max    3.87441E-02 @(c,r,l)=(78,61,1)
+         Min    3.50112E-08 @(c,r,l)=(66,29,1)
+         Mean   1.44055E-03
+         Sigma  2.27004E-03
+
+     Variable:  W_VEL           
+          3-D grid statistics
+         Max    2.14322E-02 @(c,r,l)=(59,25,1)
+         Min   -1.69204E-02 @(c,r,l)=(84,76,1)
+         Mean  -6.04362E-05
+         Sigma  2.44517E-03
+
+
+     File:  FOO             
+     Date and time:  2022182:180000  (18:00:00  July 1, 2022  )
+
+     Variable:  O3              
+          3-D grid statistics
+         Max    8.19444E-02 @(c,r,l)=(20,39,1)
+         Min    2.10407E-02 @(c,r,l)=(68,43,1)
+         Mean   4.33907E-02
+         Sigma  1.08009E-02
+
+     Variable:  NO              
+          3-D grid statistics
+         Max    3.97911E-03 @(c,r,l)=(86,80,1)
+         Min    3.35180E-08 @(c,r,l)=(67,22,1)
+         Mean   5.91750E-05
+         Sigma  8.17915E-05
+
+     Variable:  NO2             
+          3-D grid statistics
+         Max    8.39753E-03 @(c,r,l)=(86,80,1)
+         Min    1.06912E-05 @(c,r,l)=(34,1,1)
+         Mean   2.48619E-04
+         Sigma  2.94964E-04
+
+     Variable:  ANO3I           
+          3-D grid statistics
+         Max    1.19696E+00 @(c,r,l)=(30,41,1)
+         Min    3.23722E-13 @(c,r,l)=(17,3,1)
+         Mean   1.09716E-02
+         Sigma  2.29877E-02
+
+     Variable:  ANO3J           
+          3-D grid statistics
+         Max    2.35758E+00 @(c,r,l)=(30,41,1)
+         Min    2.86662E-12 @(c,r,l)=(17,3,1)
+         Mean   1.34486E-01
+         Sigma  2.10846E-01
+
+     Variable:  ANH4I           
+          3-D grid statistics
+         Max    3.40893E-01 @(c,r,l)=(30,41,1)
+         Min    1.66981E-14 @(c,r,l)=(80,43,1)
+         Mean   1.36149E-02
+         Sigma  1.90310E-02
+
+     Variable:  ANH4J           
+          3-D grid statistics
+         Max    7.56007E-01 @(c,r,l)=(48,56,1)
+         Min    1.38317E-13 @(c,r,l)=(63,26,1)
+         Mean   3.30459E-02
+         Sigma  4.58161E-02
+
+     Variable:  ASO4I           
+          3-D grid statistics
+         Max    1.71243E-01 @(c,r,l)=(10,79,1)
+         Min    2.33465E-04 @(c,r,l)=(92,29,1)
+         Mean   1.69649E-02
+         Sigma  1.79039E-02
+
+     Variable:  ASO4J           
+          3-D grid statistics
+         Max    4.16720E+00 @(c,r,l)=(48,56,1)
+         Min    2.59188E-03 @(c,r,l)=(51,33,1)
+         Mean   3.12329E-01
+         Sigma  2.11062E-01
+
+     Variable:  NH3             
+          3-D grid statistics
+         Max    4.09106E-02 @(c,r,l)=(78,61,1)
+         Min    4.86426E-08 @(c,r,l)=(70,27,1)
+         Mean   1.55073E-03
+         Sigma  2.49903E-03
+
+     Variable:  W_VEL           
+          3-D grid statistics
+         Max    2.69179E-02 @(c,r,l)=(54,30,1)
+         Min   -2.67798E-02 @(c,r,l)=(59,10,1)
+         Mean  -7.13907E-05
+         Sigma  2.70919E-03
+
+
+     File:  FOO             
+     Date and time:  2022182:190000  (19:00:00  July 1, 2022  )
+
+     Variable:  O3              
+          3-D grid statistics
+         Max    8.69070E-02 @(c,r,l)=(18,40,1)
+         Min    2.19305E-02 @(c,r,l)=(68,44,1)
+         Mean   4.36876E-02
+         Sigma  1.09478E-02
+
+     Variable:  NO              
+          3-D grid statistics
+         Max    3.34007E-03 @(c,r,l)=(86,80,1)
+         Min    4.00012E-08 @(c,r,l)=(66,21,1)
+         Mean   5.87814E-05
+         Sigma  8.03536E-05
+
+     Variable:  NO2             
+          3-D grid statistics
+         Max    1.19920E-02 @(c,r,l)=(31,41,1)
+         Min    8.15765E-06 @(c,r,l)=(25,1,1)
+         Mean   2.56075E-04
+         Sigma  3.59886E-04
+
+     Variable:  ANO3I           
+          3-D grid statistics
+         Max    1.31488E+00 @(c,r,l)=(30,41,1)
+         Min    1.18731E-13 @(c,r,l)=(17,1,1)
+         Mean   1.16097E-02
+         Sigma  2.87982E-02
+
+     Variable:  ANO3J           
+          3-D grid statistics
+         Max    1.65826E+00 @(c,r,l)=(30,41,1)
+         Min    5.01269E-13 @(c,r,l)=(17,1,1)
+         Mean   1.37010E-01
+         Sigma  2.17058E-01
+
+     Variable:  ANH4I           
+          3-D grid statistics
+         Max    3.49948E-01 @(c,r,l)=(30,41,1)
+         Min    1.80592E-14 @(c,r,l)=(80,45,1)
+         Mean   1.46428E-02
+         Sigma  2.01141E-02
+
+     Variable:  ANH4J           
+          3-D grid statistics
+         Max    6.22539E-01 @(c,r,l)=(47,57,1)
+         Min    1.29939E-13 @(c,r,l)=(63,26,1)
+         Mean   3.29368E-02
+         Sigma  4.44207E-02
+
+     Variable:  ASO4I           
+          3-D grid statistics
+         Max    1.86240E-01 @(c,r,l)=(1,73,1)
+         Min    9.71221E-05 @(c,r,l)=(63,30,1)
+         Mean   1.69686E-02
+         Sigma  1.81509E-02
+
+     Variable:  ASO4J           
+          3-D grid statistics
+         Max    3.47682E+00 @(c,r,l)=(47,57,1)
+         Min    9.04635E-04 @(c,r,l)=(51,31,1)
+         Mean   3.09415E-01
+         Sigma  2.06581E-01
+
+     Variable:  NH3             
+          3-D grid statistics
+         Max    4.35957E-02 @(c,r,l)=(74,60,1)
+         Min    1.04223E-07 @(c,r,l)=(68,29,1)
+         Mean   1.63832E-03
+         Sigma  2.65044E-03
+
+     Variable:  W_VEL           
+          3-D grid statistics
+         Max    2.31035E-02 @(c,r,l)=(53,30,1)
+         Min   -2.92951E-02 @(c,r,l)=(61,10,1)
+         Mean  -6.24000E-05
+         Sigma  2.80980E-03
+
+
+     File:  FOO             
+     Date and time:  2022182:200000  (20:00:00  July 1, 2022  )
+
+     Variable:  O3              
+          3-D grid statistics
+         Max    9.07312E-02 @(c,r,l)=(18,40,1)
+         Min    2.36318E-02 @(c,r,l)=(66,45,1)
+         Mean   4.37911E-02
+         Sigma  1.11183E-02
+
+     Variable:  NO              
+          3-D grid statistics
+         Max    2.70237E-03 @(c,r,l)=(86,80,1)
+         Min    2.04051E-08 @(c,r,l)=(66,22,1)
+         Mean   5.92966E-05
+         Sigma  8.43672E-05
+
+     Variable:  NO2             
+          3-D grid statistics
+         Max    1.54341E-02 @(c,r,l)=(30,41,1)
+         Min    7.11847E-06 @(c,r,l)=(26,1,1)
+         Mean   2.69751E-04
+         Sigma  4.17137E-04
+
+     Variable:  ANO3I           
+          3-D grid statistics
+         Max    1.30183E+00 @(c,r,l)=(30,42,1)
+         Min    1.13696E-13 @(c,r,l)=(20,5,1)
+         Mean   1.20793E-02
+         Sigma  3.05933E-02
+
+     Variable:  ANO3J           
+          3-D grid statistics
+         Max    1.66811E+00 @(c,r,l)=(30,42,1)
+         Min    5.06304E-13 @(c,r,l)=(20,5,1)
+         Mean   1.42336E-01
+         Sigma  2.27932E-01
+
+     Variable:  ANH4I           
+          3-D grid statistics
+         Max    3.22667E-01 @(c,r,l)=(30,42,1)
+         Min    9.10801E-15 @(c,r,l)=(64,31,1)
+         Mean   1.51850E-02
+         Sigma  2.06576E-02
+
+     Variable:  ANH4J           
+          3-D grid statistics
+         Max    4.44391E-01 @(c,r,l)=(47,57,1)
+         Min    1.34686E-13 @(c,r,l)=(62,27,1)
+         Mean   3.26048E-02
+         Sigma  4.35161E-02
+
+     Variable:  ASO4I           
+          3-D grid statistics
+         Max    2.32854E-01 @(c,r,l)=(1,73,1)
+         Min    5.08913E-05 @(c,r,l)=(57,32,1)
+         Mean   1.70334E-02
+         Sigma  1.87083E-02
+
+     Variable:  ASO4J           
+          3-D grid statistics
+         Max    2.55438E+00 @(c,r,l)=(47,57,1)
+         Min    6.93940E-06 @(c,r,l)=(48,14,1)
+         Mean   3.07433E-01
+         Sigma  2.03141E-01
+
+     Variable:  NH3             
+          3-D grid statistics
+         Max    4.32155E-02 @(c,r,l)=(74,60,1)
+         Min    7.77660E-10 @(c,r,l)=(48,14,1)
+         Mean   1.71434E-03
+         Sigma  2.75787E-03
+
+     Variable:  W_VEL           
+          3-D grid statistics
+         Max    3.08199E-02 @(c,r,l)=(58,27,1)
+         Min   -2.46121E-02 @(c,r,l)=(63,10,1)
+         Mean  -5.86487E-05
+         Sigma  2.93027E-03
+
+
+     File:  FOO             
+     Date and time:  2022182:210000  (21:00:00  July 1, 2022  )
+
+     Variable:  O3              
+          3-D grid statistics
+         Max    1.49044E-01 @(c,r,l)=(61,29,1)
+         Min    2.42723E-02 @(c,r,l)=(66,45,1)
+         Mean   4.37733E-02
+         Sigma  1.17853E-02
+
+     Variable:  NO              
+          3-D grid statistics
+         Max    2.49856E-03 @(c,r,l)=(30,41,1)
+         Min    1.86654E-08 @(c,r,l)=(60,20,1)
+         Mean   5.79178E-05
+         Sigma  7.85690E-05
+
+     Variable:  NO2             
+          3-D grid statistics
+         Max    2.24334E-02 @(c,r,l)=(30,41,1)
+         Min    6.49445E-06 @(c,r,l)=(27,1,1)
+         Mean   2.93370E-04
+         Sigma  4.34484E-04
+
+     Variable:  ANO3I           
+          3-D grid statistics
+         Max    1.49439E+00 @(c,r,l)=(30,41,1)
+         Min    8.23774E-13 @(c,r,l)=(20,6,1)
+         Mean   1.25064E-02
+         Sigma  3.35694E-02
+
+     Variable:  ANO3J           
+          3-D grid statistics
+         Max    1.85071E+00 @(c,r,l)=(30,41,1)
+         Min    4.07045E-12 @(c,r,l)=(17,4,1)
+         Mean   1.48422E-01
+         Sigma  2.37962E-01
+
+     Variable:  ANH4I           
+          3-D grid statistics
+         Max    3.78700E-01 @(c,r,l)=(30,42,1)
+         Min    7.77121E-15 @(c,r,l)=(64,31,1)
+         Mean   1.54760E-02
+         Sigma  2.14345E-02
+
+     Variable:  ANH4J           
+          3-D grid statistics
+         Max    4.58881E-01 @(c,r,l)=(30,42,1)
+         Min    1.18708E-13 @(c,r,l)=(62,26,1)
+         Mean   3.25291E-02
+         Sigma  4.37215E-02
+
+     Variable:  ASO4I           
+          3-D grid statistics
+         Max    2.78834E-01 @(c,r,l)=(1,73,1)
+         Min    2.44313E-05 @(c,r,l)=(56,33,1)
+         Mean   1.70803E-02
+         Sigma  1.95787E-02
+
+     Variable:  ASO4J           
+          3-D grid statistics
+         Max    1.94073E+00 @(c,r,l)=(46,60,1)
+         Min    6.63448E-04 @(c,r,l)=(57,21,1)
+         Mean   3.05750E-01
+         Sigma  2.02031E-01
+
+     Variable:  NH3             
+          3-D grid statistics
+         Max    3.73688E-02 @(c,r,l)=(77,60,1)
+         Min    6.01869E-09 @(c,r,l)=(62,27,1)
+         Mean   1.76944E-03
+         Sigma  2.81722E-03
+
+     Variable:  W_VEL           
+          3-D grid statistics
+         Max    3.91534E-02 @(c,r,l)=(57,28,1)
+         Min   -2.36842E-02 @(c,r,l)=(22,23,1)
+         Mean  -4.55012E-05
+         Sigma  2.96896E-03
+
+
+     File:  FOO             
+     Date and time:  2022182:220000  (22:00:00  July 1, 2022  )
+
+     Variable:  O3              
+          3-D grid statistics
+         Max    1.48425E-01 @(c,r,l)=(60,27,1)
+         Min    2.36934E-02 @(c,r,l)=(36,8,1)
+         Mean   4.31926E-02
+         Sigma  1.20373E-02
+
+     Variable:  NO              
+          3-D grid statistics
+         Max    3.16723E-03 @(c,r,l)=(30,41,1)
+         Min    7.70486E-08 @(c,r,l)=(61,10,1)
+         Mean   5.49311E-05
+         Sigma  7.18049E-05
+
+     Variable:  NO2             
+          3-D grid statistics
+         Max    2.17765E-02 @(c,r,l)=(30,41,1)
+         Min    6.43116E-06 @(c,r,l)=(27,1,1)
+         Mean   3.38581E-04
+         Sigma  4.62847E-04
+
+     Variable:  ANO3I           
+          3-D grid statistics
+         Max    1.82299E+00 @(c,r,l)=(30,41,1)
+         Min    1.31139E-12 @(c,r,l)=(15,1,1)
+         Mean   1.29971E-02
+         Sigma  3.62854E-02
+
+     Variable:  ANO3J           
+          3-D grid statistics
+         Max    2.64361E+00 @(c,r,l)=(30,41,1)
+         Min    6.73868E-12 @(c,r,l)=(15,1,1)
+         Mean   1.53514E-01
+         Sigma  2.43016E-01
+
+     Variable:  ANH4I           
+          3-D grid statistics
+         Max    4.50674E-01 @(c,r,l)=(30,42,1)
+         Min    1.80064E-14 @(c,r,l)=(63,27,1)
+         Mean   1.54447E-02
+         Sigma  2.21094E-02
+
+     Variable:  ANH4J           
+          3-D grid statistics
+         Max    5.52183E-01 @(c,r,l)=(30,42,1)
+         Min    1.28044E-13 @(c,r,l)=(62,25,1)
+         Mean   3.23399E-02
+         Sigma  4.45223E-02
+
+     Variable:  ASO4I           
+          3-D grid statistics
+         Max    3.11365E-01 @(c,r,l)=(1,74,1)
+         Min    6.80907E-05 @(c,r,l)=(63,30,1)
+         Mean   1.70923E-02
+         Sigma  2.06630E-02
+
+     Variable:  ASO4J           
+          3-D grid statistics
+         Max    1.75895E+00 @(c,r,l)=(45,61,1)
+         Min    4.81989E-05 @(c,r,l)=(58,22,1)
+         Mean   3.03321E-01
+         Sigma  2.02948E-01
+
+     Variable:  NH3             
+          3-D grid statistics
+         Max    3.45634E-02 @(c,r,l)=(78,61,1)
+         Min    2.11543E-08 @(c,r,l)=(61,26,1)
+         Mean   1.79344E-03
+         Sigma  2.87967E-03
+
+     Variable:  W_VEL           
+          3-D grid statistics
+         Max    4.36723E-02 @(c,r,l)=(56,28,1)
+         Min   -2.44022E-02 @(c,r,l)=(24,23,1)
+         Mean  -4.47531E-05
+         Sigma  3.05773E-03
+
+
+     File:  FOO             
+     Date and time:  2022182:230000  (23:00:00  July 1, 2022  )
+
+     Variable:  O3              
+          3-D grid statistics
+         Max    1.20363E-01 @(c,r,l)=(60,27,1)
+         Min    2.44819E-02 @(c,r,l)=(34,9,1)
+         Mean   4.16420E-02
+         Sigma  1.11250E-02
+
+     Variable:  NO              
+          3-D grid statistics
+         Max    2.10706E-03 @(c,r,l)=(30,41,1)
+         Min    9.18903E-09 @(c,r,l)=(64,24,1)
+         Mean   4.88074E-05
+         Sigma  6.13053E-05
+
+     Variable:  NO2             
+          3-D grid statistics
+         Max    1.16781E-02 @(c,r,l)=(30,39,1)
+         Min    8.06169E-06 @(c,r,l)=(27,1,1)
+         Mean   4.22000E-04
+         Sigma  4.98455E-04
+
+     Variable:  ANO3I           
+          3-D grid statistics
+         Max    1.41963E+00 @(c,r,l)=(30,41,1)
+         Min    5.64987E-13 @(c,r,l)=(15,1,1)
+         Mean   1.30734E-02
+         Sigma  2.79482E-02
+
+     Variable:  ANO3J           
+          3-D grid statistics
+         Max    2.36444E+00 @(c,r,l)=(71,47,1)
+         Min    3.62974E-12 @(c,r,l)=(14,1,1)
+         Mean   1.57174E-01
+         Sigma  2.41698E-01
+
+     Variable:  ANH4I           
+          3-D grid statistics
+         Max    3.32871E-01 @(c,r,l)=(30,41,1)
+         Min    2.02419E-14 @(c,r,l)=(62,26,1)
+         Mean   1.48641E-02
+         Sigma  2.17288E-02
+
+     Variable:  ANH4J           
+          3-D grid statistics
+         Max    4.95711E-01 @(c,r,l)=(30,41,1)
+         Min    1.25642E-13 @(c,r,l)=(63,30,1)
+         Mean   3.15669E-02
+         Sigma  4.49989E-02
+
+     Variable:  ASO4I           
+          3-D grid statistics
+         Max    3.32145E-01 @(c,r,l)=(1,74,1)
+         Min    8.04855E-05 @(c,r,l)=(59,24,1)
+         Mean   1.70922E-02
+         Sigma  2.17652E-02
+
+     Variable:  ASO4J           
+          3-D grid statistics
+         Max    2.14892E+00 @(c,r,l)=(52,70,1)
+         Min    3.32432E-05 @(c,r,l)=(51,25,1)
+         Mean   3.00368E-01
+         Sigma  2.07794E-01
+
+     Variable:  NH3             
+          3-D grid statistics
+         Max    3.51454E-02 @(c,r,l)=(78,61,1)
+         Min    2.43241E-08 @(c,r,l)=(62,25,1)
+         Mean   1.76761E-03
+         Sigma  2.87750E-03
+
+     Variable:  W_VEL           
+          3-D grid statistics
+         Max    3.76115E-02 @(c,r,l)=(56,28,1)
+         Min   -1.92874E-02 @(c,r,l)=(58,20,1)
+         Mean  -3.32412E-05
+         Sigma  2.94690E-03
+
+
+     File:  FOO             
+     Date and time:  2022183:000000  (0:00:00   July 2, 2022  )
+
+     Variable:  O3              
+          3-D grid statistics
+         Max    1.03626E-01 @(c,r,l)=(63,25,1)
+         Min    2.09498E-02 @(c,r,l)=(50,15,1)
+         Mean   3.85649E-02
+         Sigma  9.69382E-03
+
+     Variable:  NO              
+          3-D grid statistics
+         Max    1.57441E-03 @(c,r,l)=(31,39,1)
+         Min    2.94949E-10 @(c,r,l)=(98,20,1)
+         Mean   2.96489E-05
+         Sigma  4.45720E-05
+
+     Variable:  NO2             
+          3-D grid statistics
+         Max    1.54052E-02 @(c,r,l)=(31,39,1)
+         Min    9.68412E-06 @(c,r,l)=(17,1,1)
+         Mean   6.14282E-04
+         Sigma  6.78531E-04
+
+     Variable:  ANO3I           
+          3-D grid statistics
+         Max    8.13718E-01 @(c,r,l)=(30,41,1)
+         Min    3.66238E-13 @(c,r,l)=(23,1,1)
+         Mean   1.41038E-02
+         Sigma  3.00299E-02
+
+     Variable:  ANO3J           
+          3-D grid statistics
+         Max    2.52172E+00 @(c,r,l)=(71,47,1)
+         Min    1.50463E-12 @(c,r,l)=(23,1,1)
+         Mean   1.60966E-01
+         Sigma  2.39122E-01
+
+     Variable:  ANH4I           
+          3-D grid statistics
+         Max    2.43016E-01 @(c,r,l)=(52,70,1)
+         Min    2.69054E-14 @(c,r,l)=(63,29,1)
+         Mean   1.37826E-02
+         Sigma  2.17345E-02
+
+     Variable:  ANH4J           
+          3-D grid statistics
+         Max    4.53446E-01 @(c,r,l)=(52,70,1)
+         Min    1.27223E-13 @(c,r,l)=(63,30,1)
+         Mean   3.02017E-02
+         Sigma  4.64500E-02
+
+     Variable:  ASO4I           
+          3-D grid statistics
+         Max    3.38825E-01 @(c,r,l)=(2,75,1)
+         Min    1.17679E-04 @(c,r,l)=(63,30,1)
+         Mean   1.72633E-02
+         Sigma  2.29016E-02
+
+     Variable:  ASO4J           
+          3-D grid statistics
+         Max    2.86513E+00 @(c,r,l)=(52,70,1)
+         Min    1.06461E-05 @(c,r,l)=(41,9,1)
+         Mean   2.97660E-01
+         Sigma  2.16790E-01
+
+     Variable:  NH3             
+          3-D grid statistics
+         Max    3.50871E-02 @(c,r,l)=(77,60,1)
+         Min    2.75107E-08 @(c,r,l)=(55,20,1)
+         Mean   1.63694E-03
+         Sigma  2.72465E-03
+
+     Variable:  W_VEL           
+          3-D grid statistics
+         Max    3.71799E-02 @(c,r,l)=(54,29,1)
+         Min   -2.78959E-02 @(c,r,l)=(1,43,1)
+         Mean  -3.23227E-05
+         Sigma  2.86076E-03
