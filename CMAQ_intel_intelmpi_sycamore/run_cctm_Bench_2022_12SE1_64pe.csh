@@ -8,6 +8,8 @@
 #setenv UCX_TLS ^ud
 #setenv I_MPI_OFI_LIBRARY_INTERNAL 1
 source /proj/ie/proj/CMAS/CMASOps2026/env_intelonepi_202421.csh
+#The env_intelonepi_202421.csh was converted from vars.sh script that is available on sycamore and works with bash scripts.
+#/nas/sycamore/apps/intel/2024.2.1/mpi/latest/env/vars.sh
 
 
 # ============== CCTMv5.5.X STAGE EM CRACMM 12US1 Run Script ================
