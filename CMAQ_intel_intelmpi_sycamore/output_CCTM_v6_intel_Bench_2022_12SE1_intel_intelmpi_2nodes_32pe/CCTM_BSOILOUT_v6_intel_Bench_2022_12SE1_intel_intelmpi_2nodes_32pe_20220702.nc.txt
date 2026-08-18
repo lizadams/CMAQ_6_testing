@@ -1,0 +1,270 @@
+
+
+     File:  FOO             
+
+     Variable:  PTYPE           
+          3-D grid statistics
+         Max    3.00000E+00 @(c,r,l)=(60,1,1)
+         Min    0.00000E+00 @(c,r,l)=(1,1,1)
+         Mean   7.66250E-01
+         Sigma  1.04600E+00
+
+
+     File:  FOO             
+
+     Variable:  PULSEDATE       
+          3-D grid statistics
+         Max    2.02218E+06 @(c,r,l)=(48,1,1)
+         Min    0.00000E+00 @(c,r,l)=(1,1,1)
+         Mean   8.38195E+05
+         Sigma  9.96199E+05
+
+
+     File:  FOO             
+
+     Variable:  PULSETIME       
+          3-D grid statistics
+         Max    2.35730E+05 @(c,r,l)=(11,57,1)
+         Min    0.00000E+00 @(c,r,l)=(1,1,1)
+         Mean   3.55118E+04
+         Sigma  7.40935E+04
+
+
+     File:  FOO             
+
+     Variable:  RAINFALL01      
+          3-D grid statistics
+         Max    7.25675E+00 @(c,r,l)=(64,30,1)
+         Min    0.00000E+00 @(c,r,l)=(1,1,1)
+         Mean   5.79774E-02
+         Sigma  3.25661E-01
+
+
+     File:  FOO             
+
+     Variable:  RAINFALL02      
+          3-D grid statistics
+         Max    1.00297E+01 @(c,r,l)=(66,29,1)
+         Min    0.00000E+00 @(c,r,l)=(1,1,1)
+         Mean   6.10644E-02
+         Sigma  3.93109E-01
+
+
+     File:  FOO             
+
+     Variable:  RAINFALL03      
+          3-D grid statistics
+         Max    9.98952E+00 @(c,r,l)=(71,26,1)
+         Min    0.00000E+00 @(c,r,l)=(1,1,1)
+         Mean   5.61953E-02
+         Sigma  4.31647E-01
+
+
+     File:  FOO             
+
+     Variable:  RAINFALL04      
+          3-D grid statistics
+         Max    1.04396E+01 @(c,r,l)=(71,28,1)
+         Min    0.00000E+00 @(c,r,l)=(1,1,1)
+         Mean   4.56321E-02
+         Sigma  3.67002E-01
+
+
+     File:  FOO             
+
+     Variable:  RAINFALL05      
+          3-D grid statistics
+         Max    8.78540E+00 @(c,r,l)=(72,28,1)
+         Min    0.00000E+00 @(c,r,l)=(1,1,1)
+         Mean   3.85903E-02
+         Sigma  3.40198E-01
+
+
+     File:  FOO             
+
+     Variable:  RAINFALL06      
+          3-D grid statistics
+         Max    1.10521E+01 @(c,r,l)=(73,29,1)
+         Min    0.00000E+00 @(c,r,l)=(1,1,1)
+         Mean   3.50013E-02
+         Sigma  3.47325E-01
+
+
+     File:  FOO             
+
+     Variable:  RAINFALL07      
+          3-D grid statistics
+         Max    8.63892E+00 @(c,r,l)=(73,30,1)
+         Min    0.00000E+00 @(c,r,l)=(1,1,1)
+         Mean   3.63844E-02
+         Sigma  3.16438E-01
+
+
+     File:  FOO             
+
+     Variable:  RAINFALL08      
+          3-D grid statistics
+         Max    6.91583E+00 @(c,r,l)=(74,28,1)
+         Min    0.00000E+00 @(c,r,l)=(1,1,1)
+         Mean   3.43023E-02
+         Sigma  3.00717E-01
+
+
+     File:  FOO             
+
+     Variable:  RAINFALL09      
+          3-D grid statistics
+         Max    8.01665E+00 @(c,r,l)=(75,29,1)
+         Min    0.00000E+00 @(c,r,l)=(7,1,1)
+         Mean   3.59509E-02
+         Sigma  3.21048E-01
+
+
+     File:  FOO             
+
+     Variable:  RAINFALL10      
+          3-D grid statistics
+         Max    1.15634E+01 @(c,r,l)=(74,29,1)
+         Min    0.00000E+00 @(c,r,l)=(7,1,1)
+         Mean   3.61945E-02
+         Sigma  3.78778E-01
+
+
+     File:  FOO             
+
+     Variable:  RAINFALL11      
+          3-D grid statistics
+         Max    1.26509E+01 @(c,r,l)=(76,29,1)
+         Min    0.00000E+00 @(c,r,l)=(5,1,1)
+         Mean   3.67761E-02
+         Sigma  3.66657E-01
+
+
+     File:  FOO             
+
+     Variable:  RAINFALL12      
+          3-D grid statistics
+         Max    1.30096E+01 @(c,r,l)=(77,29,1)
+         Min    0.00000E+00 @(c,r,l)=(1,1,1)
+         Mean   3.79926E-02
+         Sigma  3.39581E-01
+
+
+     File:  FOO             
+
+     Variable:  RAINFALL13      
+          3-D grid statistics
+         Max    1.19751E+01 @(c,r,l)=(78,28,1)
+         Min    0.00000E+00 @(c,r,l)=(1,1,1)
+         Mean   3.72342E-02
+         Sigma  3.24005E-01
+
+
+     File:  FOO             
+
+     Variable:  RAINFALL14      
+          3-D grid statistics
+         Max    1.23693E+01 @(c,r,l)=(80,27,1)
+         Min    0.00000E+00 @(c,r,l)=(1,1,1)
+         Mean   4.44577E-02
+         Sigma  3.61573E-01
+
+
+     File:  FOO             
+
+     Variable:  RAINFALL15      
+          3-D grid statistics
+         Max    9.98922E+00 @(c,r,l)=(81,24,1)
+         Min    0.00000E+00 @(c,r,l)=(1,1,1)
+         Mean   5.08166E-02
+         Sigma  3.56210E-01
+
+
+     File:  FOO             
+
+     Variable:  RAINFALL16      
+          3-D grid statistics
+         Max    9.46831E+00 @(c,r,l)=(82,24,1)
+         Min    0.00000E+00 @(c,r,l)=(1,1,1)
+         Mean   5.62608E-02
+         Sigma  3.41825E-01
+
+
+     File:  FOO             
+
+     Variable:  RAINFALL17      
+          3-D grid statistics
+         Max    1.16122E+01 @(c,r,l)=(82,24,1)
+         Min    0.00000E+00 @(c,r,l)=(1,1,1)
+         Mean   6.31013E-02
+         Sigma  4.02836E-01
+
+
+     File:  FOO             
+
+     Variable:  RAINFALL18      
+          3-D grid statistics
+         Max    7.41380E+00 @(c,r,l)=(82,18,1)
+         Min    0.00000E+00 @(c,r,l)=(1,1,1)
+         Mean   6.18064E-02
+         Sigma  3.48048E-01
+
+
+     File:  FOO             
+
+     Variable:  RAINFALL19      
+          3-D grid statistics
+         Max    7.77140E+00 @(c,r,l)=(80,40,1)
+         Min    0.00000E+00 @(c,r,l)=(1,1,1)
+         Mean   6.25559E-02
+         Sigma  3.27711E-01
+
+
+     File:  FOO             
+
+     Variable:  RAINFALL20      
+          3-D grid statistics
+         Max    9.79492E+00 @(c,r,l)=(84,18,1)
+         Min    0.00000E+00 @(c,r,l)=(1,1,1)
+         Mean   6.51367E-02
+         Sigma  3.54513E-01
+
+
+     File:  FOO             
+
+     Variable:  RAINFALL21      
+          3-D grid statistics
+         Max    9.76847E+00 @(c,r,l)=(80,40,1)
+         Min    0.00000E+00 @(c,r,l)=(1,1,1)
+         Mean   6.13152E-02
+         Sigma  3.62778E-01
+
+
+     File:  FOO             
+
+     Variable:  RAINFALL22      
+          3-D grid statistics
+         Max    9.60218E+00 @(c,r,l)=(81,40,1)
+         Min    0.00000E+00 @(c,r,l)=(1,1,1)
+         Mean   5.59939E-02
+         Sigma  3.12554E-01
+
+
+     File:  FOO             
+
+     Variable:  RAINFALL23      
+          3-D grid statistics
+         Max    9.26989E+00 @(c,r,l)=(81,39,1)
+         Min    0.00000E+00 @(c,r,l)=(1,1,1)
+         Mean   6.18680E-02
+         Sigma  3.36815E-01
+
+
+     File:  FOO             
+
+     Variable:  RAINFALL24      
+          3-D grid statistics
+         Max    0.00000E+00 @(c,r,l)=(1,1,1)
+         Min    0.00000E+00 @(c,r,l)=(1,1,1)
+         Mean   0.00000E+00
+         Sigma  0.00000E+00
